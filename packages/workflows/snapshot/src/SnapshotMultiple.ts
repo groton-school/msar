@@ -238,7 +238,6 @@ export async function run() {
           (await fs.readFile(path.resolve(TEMP, `${pad(i)}.json`))).toString()
         );
       }
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
       // ignore missing temp dir
     }

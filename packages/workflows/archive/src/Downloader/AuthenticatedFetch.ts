@@ -51,7 +51,6 @@ export class Downloader
         try {
           this.page.reload();
           this.keepAlive();
-          // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (_) {
           // ignore TargetCloseError
         }

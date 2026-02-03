@@ -200,7 +200,6 @@ export class PronunciationScanner {
         row[PronunciationColumns.Recorded] = 'Yes';
         return data.sas_url;
       }
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
       // ignore JSON parse error
     }
