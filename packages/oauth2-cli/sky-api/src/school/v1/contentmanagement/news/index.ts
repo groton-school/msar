@@ -1,5 +1,5 @@
-import * as SkyAPI from '../../../../Module.js';
 import { Paginated } from '../../../../Paginated.js';
+import { client } from '../../../../SkyAPI.js';
 import { ContentManagementRequest } from '../ContentManagementRequest.js';
 import { NewsCategory } from './NewsCategory.js';
 import { NewsCategoryCollection } from './NewsCategoryCollection.js';
@@ -11,14 +11,14 @@ export * from './NewsItem.js';
 
 export async function categories() {
   return new Paginated<NewsCategory>(
-    await SkyAPI.requestJSON<NewsCategoryCollection>(
+    await client.requestJSON<NewsCategoryCollection>(
       'https://api.sky.blackbaud.com/school/v1/contentmanagement/news/categories'
     )
   );
 }
 
 export async function list(request: ContentManagementRequest) {
-  return await SkyAPI.requestJSON<NewsItem[]>(
+  return await client.requestJSON<NewsItem[]>(
     'https://api.sky.blackbaud.com/school/v1/contentmanagement/news/list',
     'POST',
     JSON.stringify(request),

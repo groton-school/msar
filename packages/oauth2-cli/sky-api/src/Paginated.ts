@@ -1,6 +1,6 @@
 import { URLString } from '@battis/descriptive-types';
 import { JSONValue } from '@battis/typescript-tricks';
-import * as Client from './Module.js';
+import { client } from './SkyAPI.js';
 
 type Data<T extends JSONValue> = {
   count?: number;
@@ -17,7 +17,7 @@ export class Paginated<T extends JSONValue> implements AsyncIterable<T> {
     return {
       next: async () => {
         if (index === data.value?.length && data.next_link) {
-          data = await Client.requestJSON<Data<T>>(data.next_link);
+          data = await client.requestJSON<Data<T>>(data.next_link);
           index = 0;
         }
 

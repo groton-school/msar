@@ -12,11 +12,13 @@ export const snapshot: Base.Snapshot<Snapshot.Assignments.Data> = async ({
 }) => {
   Debug.withGroupId(sectionId, 'Start capturing assignments');
 
-  const skyAssignments = (
-    await SkyAPI.requestJSON<SkyAPI.school.v1.academics.sections.assignments.AssignmentCollection>(
-      `/school/v1/academics/sections/${sectionId}/assignments`
-    )
-  ).value;
+  const skyAssignments: SkyAPI.school.v1.academics.sections.assignments.Assignment[] =
+    [];
+  for await (const s of await SkyAPI.school.v1.academics.sections.assignments.assignmentsBySection(
+    sectionId
+  )) {
+    skyAssignments.push(s);
+  }
 
   const assignmentList =
     await DatadirectPuppeteer.api.datadirect.ImportAssignmentsGet({

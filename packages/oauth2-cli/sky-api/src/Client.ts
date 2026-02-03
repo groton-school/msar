@@ -1,6 +1,8 @@
 import * as OAuth2 from '@oauth2-cli/qui-cli/dist/OAuth2.js';
 
-export type Credentials = OAuth2.Credentials & { subscription_key: string };
+export type Credentials = OAuth2.Credentials & {
+  subscription_key: string;
+};
 
 export class Client extends OAuth2.Client {
   private subscription_key: string;
