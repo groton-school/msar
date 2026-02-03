@@ -19,7 +19,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar schoolWebsite -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --pretty --headless --devtools --quit --announcements --audio --news --photoAlbums --videos --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --skyClientId=<skyClientId> --skyClientSecret=<skyClientSecret> --skyScope=<skyScope> --skyRedirectUri=<"https://localhost:3000/redirect"> --subscriptionKey=<subscriptionKey> --url=<https://example.myschoolapp.com> [...]
+  msar schoolWebsite -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --commands --silent --logging --pretty --headless --devtools --quit --announcements --audio --news --photoAlbums --videos --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --skyClientId=<skyClientId> --skyClientSecret=<skyClientSecret> --skyScope=<skyScope> --skyRedirectUri=<"https://localhost:3000/redirect"> --subscriptionKey=<subscriptionKey> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --url=<https://example.myschoolapp.com> [...]
 ```
 
 ## Arguments
@@ -60,6 +60,34 @@ Log level to console stdout (Default: "info")
 
 Log level to log file if --logFilePath provided (Default: "all")
 
+#### `--commands`
+
+Include shell commands in log (Default: true, use --no-commands to disable)
+
+#### `--silent`
+
+Hide command output (Default: false)
+
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### 1Password environment integration
+
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
+
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
+
 ### Output options
 
 #### `-o<outputPath> --outputPath=<outputPath>`
@@ -69,6 +97,28 @@ Path to output directory or file to save command output, will use the value in e
 #### `--pretty`
 
 Pretty print output to file (if --outputPath option is used)
+
+### Sky API options
+
+#### `--skyClientId=<skyClientId>`
+
+OAuth 2.0 client ID. Defaults to environment variable SKY_CLIENT_ID, if present.
+
+#### `--skyClientSecret=<skyClientSecret>`
+
+OAuth 2.0 client secret. Defaults to environment variable SKY_CLIENT_SECRET, if present.
+
+#### `--skyScope=<skyScope>`
+
+OAuth 2.0 scope. Defaults to environment variable SKY_SCOPE, if present.
+
+#### `--skyRedirectUri=<"https://localhost:3000/redirect">`
+
+OAuth 2.0 redirect URI, must be to host localhost. Defaults to environment variable SKY_REDIRECT_URI, if present.
+
+#### `--subscriptionKey=<subscriptionKey>`
+
+Blackbaud subscription access key; will use environment variable SKY_SUBSCRIPTION_KEY if present
 
 ### Puppeteer options
 
@@ -98,7 +148,7 @@ MySchoolApp SSO configuration (currently only accepts "entra-id", will use the v
 
 #### `--mfa=<mfa>`
 
-MySchoolApp MFA configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_MFA if present)
+MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
 
 #### `--viewportWidth=<n>`
 
@@ -107,28 +157,6 @@ Default: 0
 #### `--viewportHeight=<n>`
 
 Default: 0
-
-### Sky API options
-
-#### `--skyClientId=<skyClientId>`
-
-OAuth 2.0 client ID. Defaults to environment variable SKY_CLIENT_ID, if present.
-
-#### `--skyClientSecret=<skyClientSecret>`
-
-OAuth 2.0 client secret. Defaults to environment variable SKY_CLIENT_SECRET, if present.
-
-#### `--skyScope=<skyScope>`
-
-OAuth 2.0 scope. Defaults to environment variable SKY_SCOPE, if present.
-
-#### `--skyRedirectUri=<"https://localhost:3000/redirect">`
-
-OAuth 2.0 redirect URI, must be to host localhost. Defaults to environment variable SKY_REDIRECT_URI, if present.
-
-#### `--subscriptionKey=<subscriptionKey>`
-
-Blackbaud subscription access key; will use environment variable SKY_SUBSCRIPTION_KEY if present
 
 ### School Website options
 

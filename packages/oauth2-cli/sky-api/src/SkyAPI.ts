@@ -1,6 +1,6 @@
 import * as OAuth2 from '@oauth2-cli/qui-cli/dist/OAuth2.js';
 import { Colors } from '@qui-cli/colors';
-import { Env } from '@qui-cli/env-1password';
+import { Env } from '@qui-cli/env';
 import * as Plugin from '@qui-cli/plugin';
 import { Client } from './Client.js';
 

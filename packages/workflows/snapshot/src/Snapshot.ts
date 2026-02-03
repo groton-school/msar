@@ -1,7 +1,6 @@
 import { Output } from '@msar/output';
 import { Colors } from '@qui-cli/colors';
 import { Positionals } from '@qui-cli/core';
-import '@qui-cli/env-1password';
 import { Log } from '@qui-cli/log';
 import * as Plugin from '@qui-cli/plugin';
 import * as Section from './Section.js';

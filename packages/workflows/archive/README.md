@@ -17,7 +17,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar archive -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --pretty --headless --devtools --quit --retry --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> snapshotPath
+  msar archive -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --commands --silent --logging --pretty --headless --devtools --quit --retry --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> snapshotPath
 ```
 
 ## Arguments
@@ -58,6 +58,34 @@ Log level to console stdout (Default: "info")
 
 Log level to log file if --logFilePath provided (Default: "all")
 
+#### `--commands`
+
+Include shell commands in log (Default: true, use --no-commands to disable)
+
+#### `--silent`
+
+Hide command output (Default: false)
+
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### 1Password environment integration
+
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
+
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
+
 ### Output options
 
 #### `-o<outputPath> --outputPath=<outputPath>`
@@ -96,7 +124,7 @@ MySchoolApp SSO configuration (currently only accepts "entra-id", will use the v
 
 #### `--mfa=<mfa>`
 
-MySchoolApp MFA configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_MFA if present)
+MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
 
 #### `--viewportWidth=<n>`
 

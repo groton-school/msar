@@ -1,5 +1,5 @@
 import { Core, Positionals } from '@qui-cli/core';
-import { Env } from '@qui-cli/env-1password';
+import { Env } from '@qui-cli/env';
 import { Markdown } from '@qui-cli/markdown';
 import { register } from '@qui-cli/plugin';
 import fs from 'node:fs';

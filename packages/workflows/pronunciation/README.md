@@ -19,7 +19,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar pronunciation -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --pretty --headless --devtools --quit --download --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --column=<column> --user=<user> instanceURL [pathToSourceCsvFile]
+  msar pronunciation -h --u=<username> --p=<password> --o=<outputPath> --ignoreErrors --logRequests --commands --silent --logging --headless --devtools --quit --pretty --download --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --column=<column> --user=<user> instanceURL [pathToSourceCsvFile]
 ```
 
 ## Arguments
@@ -60,15 +60,33 @@ Log level to console stdout (Default: "info")
 
 Log level to log file if --logFilePath provided (Default: "all")
 
-### Output options
+#### `--commands`
 
-#### `-o<outputPath> --outputPath=<outputPath>`
+Include shell commands in log (Default: true, use --no-commands to disable)
 
-Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
+#### `--silent`
 
-#### `--pretty`
+Hide command output (Default: false)
 
-Pretty print output to file (if --outputPath option is used)
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### 1Password environment integration
+
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
+
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
 
 ### Puppeteer options
 
@@ -98,7 +116,7 @@ MySchoolApp SSO configuration (currently only accepts "entra-id", will use the v
 
 #### `--mfa=<mfa>`
 
-MySchoolApp MFA configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_MFA if present)
+MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
 
 #### `--viewportWidth=<n>`
 
@@ -107,6 +125,16 @@ Default: 0
 #### `--viewportHeight=<n>`
 
 Default: 0
+
+### Output options
+
+#### `-o<outputPath> --outputPath=<outputPath>`
+
+Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
+
+#### `--pretty`
+
+Pretty print output to file (if --outputPath option is used)
 
 ### Name pronunciation options
 

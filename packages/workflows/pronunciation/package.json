@@ -31,8 +31,8 @@
     "@msar/output": "workspace:*",
     "@msar/puppeteer-session": "workspace:*",
     "@msar/workflow": "workspace:*",
-    "@qui-cli/core": "^5.0.3",
-    "@qui-cli/env-1password": "^1.2.9",
+    "@qui-cli/core": "^6.0.0",
+    "@qui-cli/env": "^5.1.1",
     "@qui-cli/log": "^4.0.3",
     "@qui-cli/markdown": "^1.1.2",
     "@qui-cli/plugin": "^4.1.0",
@@ -49,11 +49,11 @@
     "@msar/output": "0.x",
     "@msar/puppeteer-session": "0.x",
     "@msar/workflow": "0.x",
-    "@qui-cli/core": "5.x",
-    "@qui-cli/env-1password": "1.x",
-    "@qui-cli/log": "4.x",
-    "@qui-cli/plugin": "4.x",
-    "@qui-cli/progress": "3.x",
-    "@qui-cli/root": "3.x"
+    "@qui-cli/core": ">=3",
+    "@qui-cli/env": ">=5",
+    "@qui-cli/log": ">=3",
+    "@qui-cli/plugin": ">=3",
+    "@qui-cli/progress": ">=3",
+    "@qui-cli/root": ">=3"
   }
 }
