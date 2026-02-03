@@ -228,7 +228,7 @@ If --all flag is used, which year to download (Default: "2025 - 2026")
 
 #### `--csv=<csv>`
 
-Path to CSV file of group IDs to snapshot (must contain a column named GroupId)
+Path to CSV file of group IDs to snapshot (must contain a column named Group ID)
 
 #### `--resume=<resume>`
 

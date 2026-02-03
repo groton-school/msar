@@ -109,7 +109,7 @@ export function options(): Plugin.Options {
         default: year
       },
       csv: {
-        description: `Path to CSV file of group IDs to snapshot (must contain a column named ${Colors.value('GroupId')})`
+        description: `Path to CSV file of group IDs to snapshot (must contain a column named ${Colors.value('Group ID')})`
       },
       resume: {
         description: `If ${Colors.flagArg(`--all`)} flag is used,UUID name of temp directory (${Colors.path(
@@ -172,7 +172,7 @@ export async function run() {
     } else if (csvPath) {
       groupIds = parse(await fs.readFile(path.resolve(Root.path(), csvPath)), {
         columns: true
-      }).map((row: { GroupId: number }) => row.GroupId);
+      }).map((row: { 'Group ID': number }) => row['Group ID']);
       Log.info(`${groupIds.length} group IDs loaded from CSV file`);
     } else {
       throw new Error(
