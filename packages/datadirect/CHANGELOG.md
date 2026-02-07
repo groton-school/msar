@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.8](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.4.7...datadirect/0.4.8) (2026-02-07)
+
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+
+
+### Bug Fixes
+
+* aligned @types/node with @tsconfig/node24 at Node.js v24 ([a9ac327](https://github.com/groton-school/myschoolapp-reporting/commit/a9ac3278725e568ab8c3af884987bc7f2d921534))
+* identify section assiciation IDs ([08a732a](https://github.com/groton-school/myschoolapp-reporting/commit/08a732a7b3fe45111fb140f38f91a13bbc18c8e6))
+
 ## [0.4.7](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.4.6...datadirect/0.4.7) (2025-12-26)
 
 
