@@ -5,6 +5,19 @@ import {
 } from '@battis/descriptive-types';
 
 export type Item = {
+  /**
+   * ```ascii
+   * 1 = Academic Group
+   * 2 = Athletic Group
+   * 3 = Community Group
+   * 4
+   * 5
+   * 6
+   * 7 = Dorm Group
+   * 8 = Activity Group
+   * 9 = Advisory Group
+   * ```
+   */
   AssociationId: number;
   Block: string;
   CourseTopic: string | null;
@@ -20,7 +33,7 @@ export type Item = {
   IsManager: NumericBoolean;
   IsOwner: NumericBoolean;
   /**
-   * ```
+   * ```ascii
    *     ___________
    * 0: |       |   | 2-col (wide left)
    *    |_______|___|
