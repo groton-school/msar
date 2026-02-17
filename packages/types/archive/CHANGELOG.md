@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.0](https://github.com/groton-school/myschoolapp-reporting/compare/types/archive/0.1.5...types/archive/0.2.0) (2026-02-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to @oauth2-cli/qui-cli
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+* update to @oauth2-cli/qui-cli ([2240c56](https://github.com/groton-school/myschoolapp-reporting/commit/2240c5653e9e4af08e71036264735c47b68936d3))
+
+
+### Bug Fixes
+
+* update to latest @qui-cli/* ([9abc514](https://github.com/groton-school/myschoolapp-reporting/commit/9abc514e58489409b9d7f1a888ffe254d9822df3))
+
 ## [0.1.5](https://github.com/groton-school/myschoolapp-reporting/compare/types/archive/0.1.4...types/archive/0.1.5) (2025-03-26)
 
 
