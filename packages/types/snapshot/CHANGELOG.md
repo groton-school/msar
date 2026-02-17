@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.0](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.1.10...types/snapshot/0.2.0) (2026-02-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to @oauth2-cli/qui-cli
+* rewritten as cleaner extension of @oauth2-cli/qui-cli-plugin
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+* rewritten as cleaner extension of @oauth2-cli/qui-cli-plugin ([e623f8a](https://github.com/groton-school/myschoolapp-reporting/commit/e623f8a5b3a08a28a832002176e76d2a4e6d1823))
+* **snapshot,types.snapshot:** improved typoing for media albums ([48844e5](https://github.com/groton-school/myschoolapp-reporting/commit/48844e595e35698d3408502d45fb71b00196d709))
+* update to @oauth2-cli/qui-cli ([2240c56](https://github.com/groton-school/myschoolapp-reporting/commit/2240c5653e9e4af08e71036264735c47b68936d3))
+
+
+### Bug Fixes
+
+* update to latest @qui-cli/* ([9abc514](https://github.com/groton-school/myschoolapp-reporting/commit/9abc514e58489409b9d7f1a888ffe254d9822df3))
+* update typing to reflect updates in @oauth2-cli/sky-api ([de01cf4](https://github.com/groton-school/myschoolapp-reporting/commit/de01cf46db97b463835377ced522c8547fe3634b))
+
 ## [0.1.10](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.1.9...types/snapshot/0.1.10) (2025-03-25)
 
 
