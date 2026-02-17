@@ -29,7 +29,7 @@
     "ora": "^8.2.0"
   },
   "devDependencies": {
-    "@battis/typescript-tricks": "^0.7.6",
+    "@battis/typescript-tricks": "^0.7.7",
     "@msar/puppeteer-session": "workspace:*",
     "@qui-cli/log": "^4.0.3",
     "@qui-cli/plugin": "^4.1.0",

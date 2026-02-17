@@ -19,7 +19,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar snapshot -hbtagA --u=<username> --p=<password> --o=<outputPath> --ignoreErrors --logRequests --commands --silent --logging --headless --devtools --quit --pretty --active --future --expired --studentData --metadata --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --skyClientId=<skyClientId> --skyClientSecret=<skyClientSecret> --skyScope=<skyScope> --skyRedirectUri=<"https://localhost:3000/redirect"> --subscriptionKey=<subscriptionKey> --fromDate=<fromDate> --toDate=<toDate> --association=<"Activities", "Advisories", "Classes", "Community Groups", "Dorms", and "Teams"> --termsOffered=<termsOffered> --groupsPath=<groupsPath> --year=<year> --csv=<csv> --resume=<resume> url
+  msar snapshot -hbtagA --u=<username> --p=<password> --o=<outputPath> --ignoreErrors --logRequests --commands --silent --logging --headless --devtools --quit --pretty --active --future --expired --studentData --metadata --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --fromDate=<fromDate> --toDate=<toDate> --association=<"Activities", "Advisories", "Classes", "Community Groups", "Dorms", and "Teams"> --termsOffered=<termsOffered> --groupsPath=<groupsPath> --year=<year> --csv=<csv> --resume=<resume> url
 ```
 
 ## Arguments
@@ -138,25 +138,17 @@ Pretty print output to file (if --outputPath option is used)
 
 ### Sky API options
 
-#### `--skyClientId=<skyClientId>`
+The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
 
-OAuth 2.0 client ID. Defaults to environment variable SKY_CLIENT_ID, if present.
+The Sky API subscription access key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
 
-#### `--skyClientSecret=<skyClientSecret>`
+The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present.
 
-OAuth 2.0 client secret. Defaults to environment variable SKY_CLIENT_SECRET, if present.
+The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
 
-#### `--skyScope=<skyScope>`
+The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
 
-OAuth 2.0 scope. Defaults to environment variable SKY_SCOPE, if present.
-
-#### `--skyRedirectUri=<"https://localhost:3000/redirect">`
-
-OAuth 2.0 redirect URI, must be to host localhost. Defaults to environment variable SKY_REDIRECT_URI, if present.
-
-#### `--subscriptionKey=<subscriptionKey>`
-
-Blackbaud subscription access key; will use environment variable SKY_SUBSCRIPTION_KEY if present
+The base URL to use for API requests is set from the environment variable BASE_URL, if present. If BASE_URL is not defined, ISSUER will be used as a base URL for relative URL requests.
 
 ### Snapshot options
 
@@ -204,7 +196,7 @@ Capture all sections; positional argument url is used to identify MySchoolApp in
 
 #### `--fromDate=<fromDate>`
 
-Starting date for date-based filter where relevant (Default: "2/3/2026")
+Starting date for date-based filter where relevant (Default: "2/17/2026")
 
 #### `--toDate=<toDate>`
 

@@ -12,14 +12,14 @@ export * from './NewsItem.js';
 export async function categories() {
   return new Paginated<NewsCategory>(
     await client.requestJSON<NewsCategoryCollection>(
-      'https://api.sky.blackbaud.com/school/v1/contentmanagement/news/categories'
+      'school/v1/contentmanagement/news/categories'
     )
   );
 }
 
 export async function list(request: ContentManagementRequest) {
   return await client.requestJSON<NewsItem[]>(
-    'https://api.sky.blackbaud.com/school/v1/contentmanagement/news/list',
+    'school/v1/contentmanagement/news/list',
     'POST',
     JSON.stringify(request),
     new Headers({ 'Content-Type': 'application/json' })

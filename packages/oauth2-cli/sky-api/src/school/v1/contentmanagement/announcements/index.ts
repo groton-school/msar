@@ -12,14 +12,14 @@ export * from './ContentAnnouncementCategoryCollection.js';
 export async function categories() {
   return new Paginated<ContentAnnouncementCategory>(
     await client.requestJSON<ContentAnnouncementCategoryCollection>(
-      'https://api.sky.blackbaud.com/school/v1/contentmanagement/announcements/categories'
+      'school/v1/contentmanagement/announcements/categories'
     )
   );
 }
 
 export async function list(request: ContentManagementRequest) {
   return client.requestJSON<ContentAnnouncement[]>(
-    'https://api.sky.blackbaud.com/school/v1/contentmanagement/announcements/list',
+    'school/v1/contentmanagement/announcements/list',
     'POST',
     JSON.stringify(request),
     new Headers({ 'Content-Type': 'application/json' })

@@ -29,7 +29,7 @@
     "puppeteer": "^23.11.1"
   },
   "devDependencies": {
-    "@battis/typescript-tricks": "^0.7.6",
+    "@battis/typescript-tricks": "^0.7.7",
     "@msar/rate-limiter": "workspace:*",
     "@qui-cli/env": "^5.1.1",
     "@qui-cli/log": "^4.0.3",

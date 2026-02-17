@@ -19,7 +19,7 @@ export * from './PhotoCategoryCollection.js';
 export async function categories() {
   return new Paginated<PhotoCategory>(
     await client.requestJSON<PhotoCategoryCollection>(
-      'https://api.sky.blackbaud.com/school/v1/contentmanagement/photoalbums/categories'
+      'school/v1/contentmanagement/photoalbums/categories'
     )
   );
 }
@@ -27,7 +27,7 @@ export async function categories() {
 export async function list(request: ContentManagementRequest) {
   return new Paginated<PhotoAlbum>(
     await client.requestJSON<PhotoAlbumCollection>(
-      'https://api.sky.blackbaud.com/school/v1/contentmanagement/photoalbums/list',
+      'school/v1/contentmanagement/photoalbums/list',
       'POST',
       JSON.stringify(request),
       new Headers({ 'Content-Type': 'application/json' })
@@ -38,7 +38,7 @@ export async function list(request: ContentManagementRequest) {
 export async function photosById(album_id: number) {
   return new Paginated<MediaItem>(
     await client.requestJSON<MediaItemCollection>(
-      `https://api.sky.blackbaud.com/school/v1/contentmanagement/photoalbums/${album_id}`
+      `school/v1/contentmanagement/photoalbums/${album_id}`
     )
   );
 }

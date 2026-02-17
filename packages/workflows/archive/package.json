@@ -33,7 +33,7 @@
     "puppeteer": "^23.11.1"
   },
   "devDependencies": {
-    "@battis/typescript-tricks": "^0.7.6",
+    "@battis/typescript-tricks": "^0.7.7",
     "@msar/datadirect-puppeteer": "workspace:*",
     "@msar/debug": "workspace:*",
     "@msar/output": "workspace:*",
