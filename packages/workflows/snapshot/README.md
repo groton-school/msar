@@ -138,17 +138,15 @@ Pretty print output to file (if --outputPath option is used)
 
 ### Sky API options
 
-The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
-
-The Sky API subscription access key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
-
-The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present.
+The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
 
 The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
 
 The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
 
-The base URL to use for API requests is set from the environment variable BASE_URL, if present. If BASE_URL is not defined, ISSUER will be used as a base URL for relative URL requests.
+The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
+
+The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
 
 ### Snapshot options
 
