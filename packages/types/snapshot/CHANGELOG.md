@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.1](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.2.0...types/snapshot/0.2.1) (2026-02-18)
+
+
+### Bug Fixes
+
+* reduce dependency on @oauth2-cli/sky-api ([5cfcb5f](https://github.com/groton-school/myschoolapp-reporting/commit/5cfcb5f17ea1d333baee44263f6737878a8166c9))
+
 ## [0.2.0](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.1.10...types/snapshot/0.2.0) (2026-02-17)
 
 
