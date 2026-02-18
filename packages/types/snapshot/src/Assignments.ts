@@ -1,6 +1,6 @@
 import { PathString } from '@battis/descriptive-types';
 import { ArrayElement } from '@battis/typescript-tricks';
-import { SkyAPI } from '@oauth2-cli/sky-api';
+import type { SkyAPI } from '@oauth2-cli/sky-api';
 import { api } from 'datadirect';
 
 type LinkItem<T = PathString> = Omit<
