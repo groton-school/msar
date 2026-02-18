@@ -29,7 +29,7 @@
     "version": "commit-and-tag-version"
   },
   "dependencies": {
-    "@oauth2-cli/qui-cli": "^0.7.0",
+    "@oauth2-cli/qui-cli": "^0.7.2",
     "node-fetch": "^3.3.2",
     "requestish": "^0.1.1"
   },
