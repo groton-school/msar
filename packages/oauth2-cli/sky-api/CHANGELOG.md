@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.1](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.5.0...oauth2-cli/sky-api/0.5.1) (2026-02-18)
+
+
+### Bug Fixes
+
+* use @oauth2-cli/qui-cli's `Unregistered` namespace ([20a2bae](https://github.com/groton-school/myschoolapp-reporting/commit/20a2bae1a34ae91d20efaaef96f727678cafbda1))
+
 ## [0.5.0](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.4.2...oauth2-cli/sky-api/0.5.0) (2026-02-17)
 
 
