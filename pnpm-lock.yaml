@@ -336,8 +336,8 @@ importers:
   packages/oauth2-cli/sky-api:
     dependencies:
       '@oauth2-cli/qui-cli':
-        specifier: ^0.7.0
-        version: 0.7.0(@qui-cli/env-1password@1.2.10(@1password/sdk@0.3.1)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(oauth2-cli@0.8.0(ejs@3.1.10))
+        specifier: ^0.7.2
+        version: 0.7.2(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(ejs@3.1.10)
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -409,9 +409,6 @@ importers:
 
   packages/types/snapshot:
     dependencies:
-      '@oauth2-cli/sky-api':
-        specifier: workspace:*
-        version: link:../../oauth2-cli/sky-api
       datadirect:
         specifier: workspace:*
         version: link:../../datadirect
@@ -422,6 +419,9 @@ importers:
       '@battis/typescript-tricks':
         specifier: ^0.7.7
         version: 0.7.7
+      '@oauth2-cli/sky-api':
+        specifier: workspace:*
+        version: link:../../oauth2-cli/sky-api
       '@tsconfig/node24':
         specifier: ^24.0.4
         version: 24.0.4
@@ -1275,13 +1275,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oauth2-cli/qui-cli@0.7.0':
-    resolution: {integrity: sha512-yrlAbWyj5Kvd279jo8EE1oeHdXfRtleUqObWmK2FXm/XP4NcHHQQkXgtg0V9ovBf4c0dw2bwPn4Vwl8LwkzsQg==}
+  '@oauth2-cli/qui-cli@0.7.2':
+    resolution: {integrity: sha512-usttAXyPBj2AENbm1bpPHORfm/HBvXyINVrNTysIX7ioY0WaOvDv/VNhnWjrlfJ5xfmcz6OMifzq0VFYUAilgg==}
     peerDependencies:
-      '@qui-cli/env-1password': '>=1'
+      '@qui-cli/env': '>=5'
       '@qui-cli/log': '>=3'
       '@qui-cli/plugin': '>=3'
-      oauth2-cli: 0.8.x
 
   '@octokit/auth-token@4.0.0':
     resolution: {integrity: sha512-tY/msAuJo6ARbK6SPIxZrPBms3xPbfwBrulZe0Wtr/DIY9lje2HeV1uoebShn6mx7SjCHif6EjMvoREj+gZ+SA==}
@@ -1392,14 +1391,6 @@ packages:
     resolution: {integrity: sha512-zlgTPLzzZ+HKe39S37kr0tPt5N0ajC7hNg8fvsadyfk1Llm9vhg7LeBw7jOTarI52SCMSl+UBbV2x9inLmOHQg==}
     peerDependencies:
       '@qui-cli/plugin': '>=3'
-
-  '@qui-cli/env-1password@1.2.10':
-    resolution: {integrity: sha512-0d+viaDt3b9eZEE19ymP1SKAxkZeVD5WUCl42QiqI92n/UB04m2JKJOZO6Ughqy1ItgyAq3ZZKh7zpdivzxzSg==}
-    peerDependencies:
-      '@1password/sdk': 0.3.x
-      '@battis/import-package-json': 0.x
-      '@qui-cli/env': '>=5'
-      '@qui-cli/shell': '>=3'
 
   '@qui-cli/env@5.1.1':
     resolution: {integrity: sha512-XVMkIlPcewUlyvQAhvDVIXkuv4KVU91SyUbptUZ9rI41/idONDFIh8BQW91Pt7t2eIdgVAWd2esPlIsaV8cM4g==}
@@ -4023,8 +4014,8 @@ packages:
       '@swc/core':
         optional: true
 
-  oauth2-cli@0.8.0:
-    resolution: {integrity: sha512-nyDGJmGsPAObnApTBNpYsb8v86Z0KEhk+lPwzg8E/6XPjBlMmtQMPIVfbIkjswcc8ybNS5D2EXT7TuFCou3kVg==}
+  oauth2-cli@0.8.1:
+    resolution: {integrity: sha512-rLN+ITS3ZA/7wvktbspAgoeHBWcKMFJ6iG8WmnCCSrRnXKibXFiFU0M8btQT0tTx/Lld1GMmsVTuDN/cybrfbQ==}
     peerDependencies:
       ejs: '*'
 
@@ -5994,14 +5985,17 @@ snapshots:
   '@nx/nx-win32-x64-msvc@20.8.4':
     optional: true
 
-  '@oauth2-cli/qui-cli@0.7.0(@qui-cli/env-1password@1.2.10(@1password/sdk@0.3.1)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(oauth2-cli@0.8.0(ejs@3.1.10))':
+  '@oauth2-cli/qui-cli@0.7.2(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(ejs@3.1.10)':
     dependencies:
       '@qui-cli/colors': 3.2.3
-      '@qui-cli/env-1password': 1.2.10(@1password/sdk@0.3.1)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0))
+      '@qui-cli/env': 5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0))
       '@qui-cli/log': 4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))
       '@qui-cli/plugin': 4.1.0
-      oauth2-cli: 0.8.0(ejs@3.1.10)
+      oauth2-cli: 0.8.1(ejs@3.1.10)
       requestish: 0.1.1
+    transitivePeerDependencies:
+      - ejs
+      - supports-color
 
   '@octokit/auth-token@4.0.0': {}
 
@@ -6158,13 +6152,6 @@ snapshots:
       '@qui-cli/plugin': 4.1.0
       jackspeak: 4.2.3
       wrap-ansi: 9.0.2
-
-  '@qui-cli/env-1password@1.2.10(@1password/sdk@0.3.1)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0))':
-    dependencies:
-      '@1password/sdk': 0.3.1
-      '@battis/import-package-json': 0.1.7
-      '@qui-cli/env': 5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0))
-      '@qui-cli/shell': 3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)
 
   '@qui-cli/env@5.1.1(@1password/sdk@0.3.1)(@qui-cli/colors@3.2.3)(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0))(@qui-cli/shell@3.1.2(@qui-cli/log@4.0.3(@qui-cli/plugin@4.1.0)(@qui-cli/root@3.1.0(@qui-cli/plugin@4.1.0)))(@qui-cli/plugin@4.1.0))':
     dependencies:
@@ -8521,7 +8508,7 @@ snapshots:
 
   log-symbols@4.1.0:
     dependencies:
-      chalk: 4.1.2
+      chalk: 4.1.0
       is-unicode-supported: 0.1.0
 
   log-symbols@6.0.0:
@@ -9243,7 +9230,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  oauth2-cli@0.8.0(ejs@3.1.10):
+  oauth2-cli@0.8.1(ejs@3.1.10):
     dependencies:
       '@qui-cli/colors': 3.2.3
       async-mutex: 0.5.0
