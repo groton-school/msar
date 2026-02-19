@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.2](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.5.1...oauth2-cli/sky-api/0.5.2) (2026-02-19)
+
+
+### Features
+
+* use human-readable API client name ([25a4859](https://github.com/groton-school/myschoolapp-reporting/commit/25a485921d90ad98212a027879205446c4365779))
+
 ## [0.5.1](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.5.0...oauth2-cli/sky-api/0.5.1) (2026-02-18)
 
 
