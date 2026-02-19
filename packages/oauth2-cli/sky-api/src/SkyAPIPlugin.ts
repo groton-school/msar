@@ -17,7 +17,7 @@ export class SkyAPIPlugin extends OAuth2CLI.OAuth2Plugin<
   private subscription_key?: string = undefined;
 
   public constructor() {
-    super('@oauth2-cli/sky-api');
+    super('Sky API');
     super.configure({
       credentials: {
         issuer: 'https://oauth2.sky.blackbaud.com'
