@@ -19,7 +19,8 @@
     "build:clean": "run-s clean",
     "build:compile": "tsc",
     "clean": "del ./dist",
-    "version": "commit-and-tag-version"
+    "prepack": "run-s build",
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "datadirect": "workspace:*"

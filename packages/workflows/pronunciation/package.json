@@ -21,7 +21,8 @@
     "build:clean": "run-s clean",
     "build:compile": "tsc",
     "build:readme": "./scripts/msar\\ pronunciation",
-    "version": "commit-and-tag-version"
+    "prepack": "run-s build",
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "@qui-cli/colors": "^3.2.3",
