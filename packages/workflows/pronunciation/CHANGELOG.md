@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.6](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/pronunciation/0.0.5...workflow/pronunciation/0.0.6) (2026-02-21)
+
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+* update to @oauth2-cli/qui-cli@1.x ([9aa8f31](https://github.com/groton-school/myschoolapp-reporting/commit/9aa8f3195c08d60ac1f3ae6800c520bd922d8c18))
+
 ## [0.0.5](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/pronunciation/0.0.4...workflow/pronunciation/0.0.5) (2025-12-26)
 
 
