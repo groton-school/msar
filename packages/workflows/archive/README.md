@@ -17,7 +17,11 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar archive -h --u=<username> --p=<password> --o=<outputPath> --retry --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> snapshotPath
+  msar archive -h --u=<username> --p=<password> --o=<outputPath> --retry --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors
+  --logRequests --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth>
+  --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value>
+  --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off>
+  --concurrency=<concurrency> --rate=<rate> snapshotPath
 ```
 
 ## Arguments

@@ -19,7 +19,11 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar pronunciation -h --o=<outputPath> --u=<username> --p=<password> --download --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=<column> --user=<user> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> instanceURL [pathToSourceCsvFile]
+  msar pronunciation -h --o=<outputPath> --u=<username> --p=<password> --download --pretty --headless --devtools --quit --commands --silent --logging
+  --ignoreErrors --logRequests --column=<column> --user=<user> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight>
+  --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath>
+  --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency>
+  --rate=<rate> instanceURL [pathToSourceCsvFile]
 ```
 
 ## Arguments
