@@ -17,84 +17,30 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar archive -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --commands --silent --logging --pretty --headless --devtools --quit --retry --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> snapshotPath
+  msar archive -h --u=<username> --p=<password> --o=<outputPath> --retry --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --include=<"^\\/,example\\.com"> --exclude=<"example\\.com,foo\\..+\\.com"> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> snapshotPath
 ```
 
 ## Arguments
 
 #### `-h --help`
 
-Get usage information
+Show this usage information
 
-### Workflow behavior options
+### Archive options
 
-#### `--ignoreErrors`
+Download the supporting files for an existing snapshot JSON file. This command requires a path to an existing snapshot file (snapshotPath).
 
-Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+#### `--retry`
 
-#### `--logRequests`
+Retry a previously started archive process. snapshotPath must be the path to an existing archive index.json file.
 
-Log fetch requests and responses for analysis and debugging (Default: false)
+#### `--include=<"^\/,example\.com">`
 
-#### `--concurrency=<n>`
+Comma-separated list of regular expressions to match URLs to be included in download (Default: "^\\/.*")
 
-The number of concurrent threads to run (Default: 1)
+#### `--exclude=<"example\.com,foo\..+\.com">`
 
-#### `--rate=<n>`
-
-The number of server requests allowed per second
-
-### Logging options
-
-#### `--logFilePath=<logFilePath>`
-
-Path to log file (optional)
-
-#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
-
-Log level to console stdout (Default: "info")
-
-#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
-
-Log level to log file if --logFilePath provided (Default: "all")
-
-#### `--commands`
-
-Include shell commands in log (Default: true, use --no-commands to disable)
-
-#### `--silent`
-
-Hide command output (Default: false)
-
-#### `--logging`
-
-Log commands and output at level debug (Default: true, use --no-logging to disable)
-
-### 1Password environment integration
-
-If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
-
-#### `--opAccount=<example.1password.com>`
-
-1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
-
-#### `--opItem=<1Password unique identifier>`
-
-Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
-
-#### `--opToken=<token value>`
-
-1Password service account token; will use environment variable OP_TOKEN if present
-
-### Output options
-
-#### `-o<outputPath> --outputPath=<outputPath>`
-
-Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
-
-#### `--pretty`
-
-Pretty print output to file (if --outputPath option is used)
+Comma-separated list of regular expressions to match URLs to exclude from download (Default: "^https?:")
 
 ### Puppeteer options
 
@@ -134,18 +80,72 @@ Default: 0
 
 Default: 0
 
-### Archive options
+### Output options
 
-Download the supporting files for an existing snapshot JSON file. This command requires a path to an existing snapshot file (snapshotPath).
+#### `-o<outputPath> --outputPath=<outputPath>`
 
-#### `--retry`
+Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
 
-Retry a previously started archive process. snapshotPath must be the path to an existing archive index.json file.
+#### `--pretty`
 
-#### `--include=<"^\/,example\.com">`
+Pretty print output to file (if --outputPath option is used)
 
-Comma-separated list of regular expressions to match URLs to be included in download (Default: "^\\/.*")
+### 1Password environment integration
 
-#### `--exclude=<"example\.com,foo\..+\.com">`
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
 
-Comma-separated list of regular expressions to match URLs to exclude from download (Default: "^https?:")
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
+
+#### `--commands`
+
+Include shell commands in log (Default: true, use --no-commands to disable)
+
+#### `--silent`
+
+Hide command output (Default: false)
+
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### Logging options
+
+#### `--logFilePath=<logFilePath>`
+
+Path to log file (optional)
+
+#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to console stdout (Default: "info")
+
+#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to log file if --logFilePath provided (Default: "all")
+
+#### `--concurrency=<n>`
+
+The number of concurrent threads to run (Default: 1)
+
+#### `--rate=<n>`
+
+The number of server requests allowed per second
+
+### Workflow behavior options
+
+#### `--ignoreErrors`
+
+Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+
+#### `--logRequests`
+
+Log fetch requests and responses for analysis and debugging (Default: false)

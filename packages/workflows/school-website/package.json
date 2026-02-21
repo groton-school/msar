@@ -35,7 +35,7 @@
     "@msar/workflow": "workspace:*",
     "@oauth2-cli/sky-api": "workspace:*",
     "@qui-cli/colors": "^3.2.3",
-    "@qui-cli/core": "^6.0.0",
+    "@qui-cli/core": "^6.0.2",
     "@qui-cli/env": "^5.1.1",
     "@qui-cli/log": "^4.0.3",
     "@qui-cli/markdown": "^1.1.2",

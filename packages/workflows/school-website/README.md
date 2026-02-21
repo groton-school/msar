@@ -19,96 +19,42 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar schoolWebsite -h --o=<outputPath> --u=<username> --p=<password> --ignoreErrors --logRequests --commands --silent --logging --pretty --headless --devtools --quit --announcements --audio --news --photoAlbums --videos --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --url=<https://example.myschoolapp.com> [...]
+  msar schoolWebsite -h --u=<username> --p=<password> --o=<outputPath> --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=<https://example.myschoolapp.com> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> [...]
 ```
 
 ## Arguments
 
 #### `-h --help`
 
-Get usage information
+Show this usage information
 
-### Workflow behavior options
+### School Website options
 
-#### `--ignoreErrors`
+Archive content from the School Website. Output is organized as named JSON index files for each downloaded content type, with the files themselves stored in the same directory mirroring the CDN paths. Relative file paths to content are inserted into the index files alongside the original URLs.
 
-Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+#### `--url=<https://example.myschoolapp.com>`
 
-#### `--logRequests`
+URL of MySchoolApp instance (required if capturing --audio or --videos})
 
-Log fetch requests and responses for analysis and debugging (Default: false)
+#### `--announcements`
 
-#### `--concurrency=<n>`
+Download announcements (Default: true, use --no-announcements to disable)
 
-The number of concurrent threads to run (Default: 1)
+#### `--audio`
 
-#### `--rate=<n>`
+Download audio items, requires --url) (Default: true, use --no-audio to disable)
 
-The number of server requests allowed per second
+#### `--news`
 
-### Logging options
+Download news items (Default: true, use --no-news to disable)
 
-#### `--logFilePath=<logFilePath>`
+#### `--photoAlbums`
 
-Path to log file (optional)
+Download photo albums (Default: true, use --no-photoAlbums to disable)
 
-#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
+#### `--videos`
 
-Log level to console stdout (Default: "info")
-
-#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
-
-Log level to log file if --logFilePath provided (Default: "all")
-
-#### `--commands`
-
-Include shell commands in log (Default: true, use --no-commands to disable)
-
-#### `--silent`
-
-Hide command output (Default: false)
-
-#### `--logging`
-
-Log commands and output at level debug (Default: true, use --no-logging to disable)
-
-### 1Password environment integration
-
-If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
-
-#### `--opAccount=<example.1password.com>`
-
-1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
-
-#### `--opItem=<1Password unique identifier>`
-
-Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
-
-#### `--opToken=<token value>`
-
-1Password service account token; will use environment variable OP_TOKEN if present
-
-### Output options
-
-#### `-o<outputPath> --outputPath=<outputPath>`
-
-Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
-
-#### `--pretty`
-
-Pretty print output to file (if --outputPath option is used)
-
-### Sky API options
-
-The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
-
-The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
-
-The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
-
-The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
-
-The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
+Download videos, requires --url) (Default: true, use --no-videos to disable)
 
 ### Puppeteer options
 
@@ -148,30 +94,86 @@ Default: 0
 
 Default: 0
 
-### School Website options
+### Sky API options
 
-Archive content from the School Website. Output is organized as named JSON index files for each downloaded content type, with the files themselves stored in the same directory mirroring the CDN paths. Relative file paths to content are inserted into the index files alongside the original URLs.
+The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
 
-#### `--url=<https://example.myschoolapp.com>`
+The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
 
-URL of MySchoolApp instance (required if capturing --audio or --videos})
+The OAuth 2.0 scope is set from the environment variable SKY_SCOPE, if present.
 
-#### `--announcements`
+The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
 
-Download announcements (Default: true, use --no-announcements to disable)
+The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
 
-#### `--audio`
+The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
 
-Download audio items, requires --url) (Default: true, use --no-audio to disable)
+### Output options
 
-#### `--news`
+#### `-o<outputPath> --outputPath=<outputPath>`
 
-Download news items (Default: true, use --no-news to disable)
+Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
 
-#### `--photoAlbums`
+#### `--pretty`
 
-Download photo albums (Default: true, use --no-photoAlbums to disable)
+Pretty print output to file (if --outputPath option is used)
 
-#### `--videos`
+### 1Password environment integration
 
-Download videos, requires --url) (Default: true, use --no-videos to disable)
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
+
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
+
+#### `--commands`
+
+Include shell commands in log (Default: true, use --no-commands to disable)
+
+#### `--silent`
+
+Hide command output (Default: false)
+
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### Logging options
+
+#### `--logFilePath=<logFilePath>`
+
+Path to log file (optional)
+
+#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to console stdout (Default: "info")
+
+#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to log file if --logFilePath provided (Default: "all")
+
+#### `--concurrency=<n>`
+
+The number of concurrent threads to run (Default: 1)
+
+#### `--rate=<n>`
+
+The number of server requests allowed per second
+
+### Workflow behavior options
+
+#### `--ignoreErrors`
+
+Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+
+#### `--logRequests`
+
+Log fetch requests and responses for analysis and debugging (Default: false)

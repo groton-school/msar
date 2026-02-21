@@ -1,4 +1,4 @@
-import * as OAuth2CLI from '@oauth2-cli/qui-cli/dist/Unregistered.js';
+import * as OAuth2CLI from '@oauth2-cli/qui-cli/extendable/index.js';
 import { Colors } from '@qui-cli/colors';
 import { Env } from '@qui-cli/env';
 import * as Plugin from '@qui-cli/plugin';
@@ -74,7 +74,7 @@ export class SkyAPIPlugin extends OAuth2CLI.OAuth2Plugin<
   }
 
   protected instantiateClient(
-    options: OAuth2CLI.ClientOptions<Credentials>
+    options: OAuth2CLI.Options<Credentials>
   ): OAuth2CLI.Client<Credentials> {
     if (!this.subscription_key) {
       throw new Error('No subscription access key is defined.');

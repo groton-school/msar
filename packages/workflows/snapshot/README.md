@@ -19,134 +19,14 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar snapshot -hbtagA --u=<username> --p=<password> --o=<outputPath> --ignoreErrors --logRequests --commands --silent --logging --headless --devtools --quit --pretty --active --future --expired --studentData --metadata --concurrency=<concurrency> --rate=<rate> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --fromDate=<fromDate> --toDate=<toDate> --association=<"Activities", "Advisories", "Classes", "Community Groups", "Dorms", and "Teams"> --termsOffered=<termsOffered> --groupsPath=<groupsPath> --year=<year> --csv=<csv> --resume=<resume> url
+  msar snapshot -hbtagA --o=<outputPath> --u=<username> --p=<password> --active --future --expired --studentData --metadata --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --fromDate=<fromDate> --toDate=<toDate> --association=<"Activities", "Advisories", "Classes", "Community Groups", "Dorms", and "Teams"> --termsOffered=<termsOffered> --groupsPath=<groupsPath> --year=<year> --csv=<csv> --resume=<resume> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> url
 ```
 
 ## Arguments
 
 #### `-h --help`
 
-Get usage information
-
-#### `--concurrency=<n>`
-
-The number of concurrent threads to run (Default: 1)
-
-#### `--rate=<n>`
-
-The number of server requests allowed per second
-
-### Workflow behavior options
-
-#### `--ignoreErrors`
-
-Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
-
-#### `--logRequests`
-
-Log fetch requests and responses for analysis and debugging (Default: false)
-
-### Logging options
-
-#### `--logFilePath=<logFilePath>`
-
-Path to log file (optional)
-
-#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
-
-Log level to console stdout (Default: "info")
-
-#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
-
-Log level to log file if --logFilePath provided (Default: "all")
-
-#### `--commands`
-
-Include shell commands in log (Default: true, use --no-commands to disable)
-
-#### `--silent`
-
-Hide command output (Default: false)
-
-#### `--logging`
-
-Log commands and output at level debug (Default: true, use --no-logging to disable)
-
-### 1Password environment integration
-
-If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
-
-#### `--opAccount=<example.1password.com>`
-
-1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
-
-#### `--opItem=<1Password unique identifier>`
-
-Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
-
-#### `--opToken=<token value>`
-
-1Password service account token; will use environment variable OP_TOKEN if present
-
-### Puppeteer options
-
-#### `--headless`
-
-Run Puppeteer's Chrome instance headless (Default: false)
-
-#### `--devtools`
-
-Open Chrome DevTools with the window
-
-#### `--quit`
-
-Quit Puppeteer's Chrome instance on successful completion (Default: true, use --no-quit to disable)
-
-#### `-u<username> --username=<username>`
-
-MySchoolApp username
-
-#### `-p<password> --password=<password>`
-
-MySchoolApp password
-
-#### `--sso=<sso>`
-
-MySchoolApp SSO configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_SSO if present)
-
-#### `--mfa=<mfa>`
-
-MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
-
-#### `--viewportWidth=<n>`
-
-Default: 0
-
-#### `--viewportHeight=<n>`
-
-Default: 0
-
-### Output options
-
-#### `-o<outputPath> --outputPath=<outputPath>`
-
-Path to output directory or file to save command output (default: /Users/sbattis/Documents/GitHub/msar/:Snapshot.json, where :Snapshot is either the name of the course in ":Year - :Teacher - :CourseTitle - :SectionId" format for a single section or group or "snapshot" if the --all flag is set. :Snapshot.metadata.json is also output, recording the parameters of the snapshot command. Will use the value in environment variable OUTPUT_PATH if present)
-
-#### `--pretty`
-
-Pretty print output to file (if --outputPath option is used)
-
-### Sky API options
-
-The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
-
-The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
-
-The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
-
-The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
-
-The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
+Show this usage information
 
 ### Snapshot options
 
@@ -194,7 +74,7 @@ Capture all sections; positional argument url is used to identify MySchoolApp in
 
 #### `--fromDate=<fromDate>`
 
-Starting date for date-based filter where relevant (Default: "2/17/2026")
+Starting date for date-based filter where relevant (Default: "2/21/2026")
 
 #### `--toDate=<toDate>`
 
@@ -223,3 +103,125 @@ Path to CSV file of group IDs to snapshot (must contain a column named Group ID)
 #### `--resume=<resume>`
 
 If --all flag is used,UUID name of temp directory (/tmp/msar/snapshot/:uuid) for which to resume collecting snapshots
+
+### Sky API options
+
+The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
+
+The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
+
+The OAuth 2.0 scope is set from the environment variable SKY_SCOPE, if present.
+
+The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
+
+The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
+
+The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
+
+### Output options
+
+#### `-o<outputPath> --outputPath=<outputPath>`
+
+Path to output directory or file to save command output (default: /Users/sbattis/Documents/GitHub/msar/:Snapshot.json, where :Snapshot is either the name of the course in ":Year - :Teacher - :CourseTitle - :SectionId" format for a single section or group or "snapshot" if the --all flag is set. :Snapshot.metadata.json is also output, recording the parameters of the snapshot command. Will use the value in environment variable OUTPUT_PATH if present)
+
+#### `--pretty`
+
+Pretty print output to file (if --outputPath option is used)
+
+### Puppeteer options
+
+#### `--headless`
+
+Run Puppeteer's Chrome instance headless (Default: false)
+
+#### `--devtools`
+
+Open Chrome DevTools with the window
+
+#### `--quit`
+
+Quit Puppeteer's Chrome instance on successful completion (Default: true, use --no-quit to disable)
+
+#### `-u<username> --username=<username>`
+
+MySchoolApp username
+
+#### `-p<password> --password=<password>`
+
+MySchoolApp password
+
+#### `--sso=<sso>`
+
+MySchoolApp SSO configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_SSO if present)
+
+#### `--mfa=<mfa>`
+
+MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
+
+#### `--viewportWidth=<n>`
+
+Default: 0
+
+#### `--viewportHeight=<n>`
+
+Default: 0
+
+### 1Password environment integration
+
+If 1Password secret references are stored in the environment, a 1Password service account token is required to access the secret values.
+
+#### `--opAccount=<example.1password.com>`
+
+1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+
+#### `--opItem=<1Password unique identifier>`
+
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+
+#### `--opToken=<token value>`
+
+1Password service account token; will use environment variable OP_TOKEN if present
+
+#### `--commands`
+
+Include shell commands in log (Default: true, use --no-commands to disable)
+
+#### `--silent`
+
+Hide command output (Default: false)
+
+#### `--logging`
+
+Log commands and output at level debug (Default: true, use --no-logging to disable)
+
+### Logging options
+
+#### `--logFilePath=<logFilePath>`
+
+Path to log file (optional)
+
+#### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to console stdout (Default: "info")
+
+#### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
+
+Log level to log file if --logFilePath provided (Default: "all")
+
+### Workflow behavior options
+
+#### `--ignoreErrors`
+
+Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+
+#### `--logRequests`
+
+Log fetch requests and responses for analysis and debugging (Default: false)
+
+#### `--concurrency=<n>`
+
+The number of concurrent threads to run (Default: 1)
+
+#### `--rate=<n>`
+
+The number of server requests allowed per second

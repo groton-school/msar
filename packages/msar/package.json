@@ -41,7 +41,7 @@
     "@msar/pronunciation": "workspace:*",
     "@msar/school-website": "workspace:*",
     "@msar/snapshot": "workspace:*",
-    "@qui-cli/core": "^6.0.0",
+    "@qui-cli/core": "^6.0.2",
     "@qui-cli/plugin": "^4.1.0",
     "@qui-cli/structured": "^2.0.5"
   },
