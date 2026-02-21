@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.0](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/snapshot/0.4.0...workflow/snapshot/0.5.0) (2026-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to @oauth2-cli/qui-cli
+* pre-registered plugin is ESM module, updated option arg names
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+* update to @oauth2-cli/qui-cli ([2240c56](https://github.com/groton-school/myschoolapp-reporting/commit/2240c5653e9e4af08e71036264735c47b68936d3))
+* update to @oauth2-cli/qui-cli@1.x ([9aa8f31](https://github.com/groton-school/myschoolapp-reporting/commit/9aa8f3195c08d60ac1f3ae6800c520bd922d8c18))
+
+
+### Bug Fixes
+
+* pre-registered plugin is ESM module, updated option arg names ([50ff079](https://github.com/groton-school/myschoolapp-reporting/commit/50ff079a5849ccc30c41e86d7b1d72d340fe9b87))
+* use default "Group ID" column for CSV snapshot ([6839a0a](https://github.com/groton-school/myschoolapp-reporting/commit/6839a0ae403f9d213e88bb63738c1ecde7a7c426))
+
 ## [0.4.0](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/snapshot/0.3.6...workflow/snapshot/0.4.0) (2025-12-26)
 
 
