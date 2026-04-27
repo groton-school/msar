@@ -23,13 +23,13 @@
     "release": "commit-and-tag-version"
   },
   "dependencies": {
-    "@qui-cli/colors": "^3.2.3"
+    "@qui-cli/colors": "^3.2.4"
   },
   "devDependencies": {
-    "@qui-cli/log": "^4.0.3",
-    "@qui-cli/plugin": "^4.1.0",
-    "@tsconfig/node24": "^24.0.4",
-    "commit-and-tag-version": "^12.6.1",
+    "@qui-cli/log": "^4.0.4",
+    "@qui-cli/plugin": "^4.1.1",
+    "@tsconfig/node-lts": "^24.0.0",
+    "commit-and-tag-version": "^12.7.1",
     "del-cli": "^6.0.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.9.3"
