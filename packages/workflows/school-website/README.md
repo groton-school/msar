@@ -19,7 +19,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 ## Usage:
 
 ```bash
-  msar schoolWebsite -h --u=<username> --p=<password> --o=<outputPath> --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=<https://example.myschoolapp.com> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> [...]
+  msar schoolWebsite -h --u=<username> --p=<password> --o=<outputPath> --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=<`https://example.myschoolapp.com`> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> `[...]`
 ```
 
 ## Arguments
@@ -32,35 +32,35 @@ Show this usage information
 
 Archive content from the School Website. Output is organized as named JSON index files for each downloaded content type, with the files themselves stored in the same directory mirroring the CDN paths. Relative file paths to content are inserted into the index files alongside the original URLs.
 
-#### `--url=<https://example.myschoolapp.com>`
+#### `--url=<`https://example.myschoolapp.com`>`
 
-URL of MySchoolApp instance (required if capturing --audio or --videos})
+URL of MySchoolApp instance (required if capturing `--audio` or `--videos`})
 
 #### `--announcements`
 
-Download announcements (Default: true, use --no-announcements to disable)
+Download announcements (Default: `true`, use `--no-announcements` to disable)
 
 #### `--audio`
 
-Download audio items, requires --url) (Default: true, use --no-audio to disable)
+Download audio items, requires `--url`) (Default: `true`, use `--no-audio` to disable)
 
 #### `--news`
 
-Download news items (Default: true, use --no-news to disable)
+Download news items (Default: `true`, use `--no-news` to disable)
 
 #### `--photoAlbums`
 
-Download photo albums (Default: true, use --no-photoAlbums to disable)
+Download photo albums (Default: `true`, use `--no-photoAlbums` to disable)
 
 #### `--videos`
 
-Download videos, requires --url) (Default: true, use --no-videos to disable)
+Download videos, requires `--url`) (Default: `true`, use `--no-videos` to disable)
 
 ### Puppeteer options
 
 #### `--headless`
 
-Run Puppeteer's Chrome instance headless (Default: false)
+Run Puppeteer's Chrome instance headless (Default: `false`)
 
 #### `--devtools`
 
@@ -68,7 +68,7 @@ Open Chrome DevTools with the window
 
 #### `--quit`
 
-Quit Puppeteer's Chrome instance on successful completion (Default: true, use --no-quit to disable)
+Quit Puppeteer's Chrome instance on successful completion (Default: `true`, use `--no-quit` to disable)
 
 #### `-u<username> --username=<username>`
 
@@ -80,43 +80,43 @@ MySchoolApp password
 
 #### `--sso=<sso>`
 
-MySchoolApp SSO configuration (currently only accepts "entra-id", will use the value in environment variable PUPPETEER_SSO if present)
+MySchoolApp SSO configuration (currently only accepts `"entra-id"`, will use the value in environment variable `PUPPETEER_SSO` if present)
 
 #### `--mfa=<mfa>`
 
-MySchoolApp MFA configuration (currently only accepts "authenticator", will use the value in environment variable PUPPETEER_MFA if present)
+MySchoolApp MFA configuration (currently only accepts `"authenticator"`, will use the value in environment variable `PUPPETEER_MFA` if present)
 
 #### `--viewportWidth=<n>`
 
-Default: 0
+Default: `0`
 
 #### `--viewportHeight=<n>`
 
-Default: 0
+Default: `0`
 
 ### Sky API options
 
-The OAuth 2.0 client_id is set from the environment variable SKY_CLIENT_ID, if present. See https://developer.blackbaud.com/apps/ for more information.
+The OAuth 2.0 **client_id** is set from the environment variable `SKY_CLIENT_ID`, if present. See `https://developer.blackbaud.com/apps/` for more information.
 
-The OAuth 2.0 client_secret is set from the environment variable SKY_CLIENT_SECRET, if present.
+The OAuth 2.0 **client_secret** is set from the environment variable `SKY_CLIENT_SECRET`, if present.
 
-The OAuth 2.0 scope is set from the environment variable SKY_SCOPE, if present.
+The OAuth 2.0 **scope** is set from the environment variable `SKY_SCOPE`, if present.
 
-The OAuth 2.0 redirect_uri, which must at least redirect to localhost, is set from the environment variable SKY_REDIRECT_URI, if present. (e.g. "http://localhost:3000/redirect")
+The OAuth 2.0 **redirect_uri**, which must at least redirect to `localhost`, is set from the environment variable `SKY_REDIRECT_URI`, if present. (e.g. `"http://localhost:3000/redirect"`)
 
-The Sky API subscription_key is read from the SKY_SUBSCRIPTION_KEY environment variable, if present. See https://developer.blackbaud.com/subscriptions/ for more information.
+The Sky API **subscription_key** is read from the `SKY_SUBSCRIPTION_KEY` environment variable, if present. See `https://developer.blackbaud.com/subscriptions/` for more information.
 
-The OAuth 2.0 refresh_token is read from the SKY_REFRESH_TOKEN environment variable, if present.
+The OAuth 2.0 **refresh_token** is read from the `SKY_REFRESH_TOKEN` environment variable, if present.
 
 ### Output options
 
 #### `-o<outputPath> --outputPath=<outputPath>`
 
-Path to output directory or file to save command output, will use the value in environment variable OUTPUT_PATH if present
+Path to output directory or file to save command output, will use the value in environment variable `OUTPUT_PATH` if present
 
 #### `--pretty`
 
-Pretty print output to file (if --outputPath option is used)
+Pretty print output to file (if `--outputPath` option is used)
 
 ### 1Password environment integration
 
@@ -124,29 +124,29 @@ If 1Password secret references are stored in the environment, a 1Password servic
 
 #### `--opAccount=<example.1password.com>`
 
-1Password account to use (if signed into multiple); will use environment variable OP_ACCOUNT if present
+1Password account to use (if signed into multiple); will use environment variable `OP_ACCOUNT` if present
 
 #### `--opItem=<1Password unique identifier>`
 
-Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable OP_ITEM if present. Requires the 1Password CLI tool (https://developer.1password.com/docs/cli)
+Name or ID of the 1Password API Credential item storing the 1Password service account token; will use environment variable `OP_ITEM` if present. Requires the 1Password CLI tool (`https://developer.1password.com/docs/cli`)
 
 #### `--opToken=<token value>`
 
-1Password service account token; will use environment variable OP_TOKEN if present
+1Password service account token; will use environment variable `OP_TOKEN` if present
 
 ### Shell command options
 
 #### `--commands`
 
-Include shell commands in log (Default: true, use --no-commands to disable)
+Include shell commands in log (Default: `true`, use `--no-commands` to disable)
 
 #### `--silent`
 
-Hide command output (Default: false)
+Hide command output (Default: `false`)
 
 #### `--logging`
 
-Log commands and output at level debug (Default: true, use --no-logging to disable)
+Log commands and output at level `debug` (Default: `true`, use `--no-logging` to disable)
 
 ### Logging options
 
@@ -156,15 +156,15 @@ Path to log file (optional)
 
 #### `--stdoutLevel=<all|trace|debug|info|warning|error|fatal|off>`
 
-Log level to console stdout (Default: "info")
+Log level to console stdout (Default: `"info"`)
 
 #### `--fileLevel=<all|trace|debug|info|warning|error|fatal|off>`
 
-Log level to log file if --logFilePath provided (Default: "all")
+Log level to log file if `--logFilePath` provided (Default: `"all"`)
 
 #### `--concurrency=<n>`
 
-The number of concurrent threads to run (Default: 1)
+The number of concurrent threads to run (Default: `1`)
 
 #### `--rate=<n>`
 
@@ -174,8 +174,8 @@ The number of server requests allowed per second
 
 #### `--ignoreErrors`
 
-Continue run even if errors are encountered (Default: true, use --no-ignoreErrors to disable)
+Continue run even if errors are encountered (Default: `true`, use `--no-ignoreErrors` to disable)
 
 #### `--logRequests`
 
-Log fetch requests and responses for analysis and debugging (Default: false)
+Log fetch requests and responses for analysis and debugging (Default: `false`)
