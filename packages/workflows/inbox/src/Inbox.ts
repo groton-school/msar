@@ -28,6 +28,16 @@ export type Configuration = {
 const URL = 'url';
 const CSV = 'csv';
 
+Positionals.require({
+  [URL]: {
+    description: `The URL of the LMS instance as ${Colors.positionalArg(URL)} (required)`
+  },
+  [CSV]: {
+    description: `Path to a CSV file of user identifiers to analyze as ${Colors.positionalArg(CSV)} (optional if ${Colors.optionArg('--val')} is set)`
+  }
+});
+Positionals.allowOnlyNamedArgs();
+
 export const name = '@msar/inbox';
 
 let url: string | undefined = undefined;
@@ -52,15 +62,6 @@ export function configure(config: Configuration = {}) {
 }
 
 export function options(): Plugin.Options {
-  Positionals.require({
-    [URL]: {
-      description: `The URL of the LMS instance as ${Colors.positionalArg(URL)} (required)`
-    },
-    [CSV]: {
-      description: `Path to a CSV file of user identifiers to analyze as ${Colors.positionalArg(CSV)} (optional if ${Colors.optionArg('--val')} is set)`
-    }
-  });
-  Positionals.allowOnlyNamedArgs();
   return {
     man: [
       { level: 1, text: 'Inbox options' },

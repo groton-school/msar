@@ -24,6 +24,13 @@ Output.outputPathDescription(
 
 const COURSE_URL = 'url';
 
+Positionals.require({
+  [COURSE_URL]: {
+    description: `The URL of a page within the target course`
+  }
+});
+Positionals.allowOnlyNamedArgs();
+
 export { Configuration, Context } from './Section.js';
 
 export const name = '@msar/snapshot';
@@ -88,13 +95,6 @@ export function configure(proposal: Configuration = {}) {
 }
 
 export function options(): Plugin.Options {
-  Positionals.require({
-    [COURSE_URL]: {
-      description: `The URL of a page within the target course`
-    }
-  });
-  Positionals.allowOnlyNamedArgs();
-
   /*
    * TODO add snapshot retry option
    *   This needs to happen *before* adding any new tweaks to snapshot

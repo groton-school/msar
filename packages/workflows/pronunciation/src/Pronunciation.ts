@@ -19,6 +19,17 @@ export type Configuration = {
 const URL_ARG = 'instanceURL';
 const CSV_ARG = 'pathToSourceCsvFile';
 
+Positionals.require({
+  [URL_ARG]: {
+    description: `The URL of the LMS instance as ${Colors.positionalArg(URL_ARG)} (required)`
+  },
+  [CSV_ARG]: {
+    description: `Path to a CSV file of users with a column of Blackbaud User IDs to analyze as ${Colors.positionalArg(CSV_ARG)} (optional if ${Colors.optionArg('--val')} is set)`
+  }
+});
+Positionals.allowOnlyNamedArgs();
+Positionals.requireAtLeast(1);
+
 export const name = '@msar/pronunciation';
 
 let url: string | undefined = undefined;
@@ -34,16 +45,6 @@ export function configure(config: Configuration = {}) {
 }
 
 export function options(): Plugin.Options {
-  Positionals.require({
-    [URL_ARG]: {
-      description: `The URL of the LMS instance as ${Colors.positionalArg(URL_ARG)} (required)`
-    },
-    [CSV_ARG]: {
-      description: `Path to a CSV file of users with a column of Blackbaud User IDs to analyze as ${Colors.positionalArg(CSV_ARG)} (optional if ${Colors.optionArg('--val')} is set)`
-    }
-  });
-  Positionals.allowOnlyNamedArgs();
-  Positionals.requireAtLeast(1);
   return {
     man: [
       { level: 1, text: 'Name pronunciation options' },

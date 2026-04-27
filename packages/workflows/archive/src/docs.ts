@@ -1,4 +1,4 @@
-import { Core, Positionals } from '@qui-cli/core';
+import { Core } from '@qui-cli/core';
 import { Env } from '@qui-cli/env';
 import { Markdown } from '@qui-cli/markdown';
 import { register } from '@qui-cli/plugin';
@@ -11,13 +11,13 @@ await register(Archive);
 Env.configure({ root: path.dirname(import.meta.dirname) });
 Markdown.configure({
   outputPath: path.join(import.meta.dirname, '../README.md'),
-  pre: fs
-    .readFileSync(path.join(import.meta.dirname, '../docs/pre.md'))
-    .toString(),
+  pre: fs.readFileSync(
+    path.join(import.meta.dirname, '../docs/pre.md'),
+    'utf8'
+  ),
   headingLevelAdjustment: 2,
   overwrite: true
 });
-Positionals.requireNoMoreThan(0);
 
 await Core.init();
 await Markdown.run();

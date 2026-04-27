@@ -16,41 +16,41 @@ npm install -g msar
 
 It depends on [Node.js](https://nodejs.org/) which provides the `npm` package manager tool when installed.
 
-## Usage:
+Usage:
 
-```bash
-  msar pronunciation -h --o=<outputPath> --u=<username> --p=<password> --download --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=<column> --user=<user> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> `instanceURL` `[pathToSourceCsvFile]`
-```
+<pre lang="bash">msar pronunciation -h --o=&lt;outputPath&gt; --u=&lt;username&gt; --p=&lt;password&gt; --download --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=&lt;column&gt; --user=&lt;user&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>instanceURL</u> <u>[pathToSourceCsvFile]</u></pre>
 
-## Arguments
+
+
+### Positional arguments
+
+#### <u>`instanceURL`</u>
+
+The URL of the LMS instance as <u>`instanceURL`</u> (required)
+
+#### <u>`pathToSourceCsvFile`</u>
+
+Path to a CSV file of users with a column of Blackbaud User IDs to analyze as <u>`pathToSourceCsvFile`</u> (optional if `--val` is set)
+
+### Arguments
 
 #### `-h --help`
 
 Show this usage information
 
-### Positional arguments
-
-#### `instanceURL`
-
-The URL of the LMS instance as `instanceURL` (required)
-
-#### `pathToSourceCsvFile`
-
-Path to a CSV file of users with a column of Blackbaud User IDs to analyze as `pathToSourceCsvFile` (optional if `--val` is set)
-
 ### Name pronunciation options
 
-Scan users for name pronunciation recordings. Include the URL of the LMS instance as `instanceURL` (required) and path to a CSV file of Blackbaud User IDs to analyze as `pathToSourceCsvFile` (optional if `--user` is set). Intended to receive a generic `UserWorkList.csv` export from the LMS as input, outputting the same CSV file to `--outputPath` with data columns appended.
+Scan users for name pronunciation recordings. Include the URL of the LMS instance as <u>`instanceURL`</u> (required) and path to a CSV file of Blackbaud User IDs to analyze as <u>`pathToSourceCsvFile`</u> (optional if `--user` is set). Intended to receive a generic `UserWorkList.csv` export from the LMS as input, outputting the same CSV file to `--outputPath` with data columns appended.
 
 Due to the number of impersonated clicks necessary for this workflow, running `--headless` reduces the likelihood of stray user actions interfering with the script.
 
 #### `--column=<column>`
 
-Column label for CSV input (`pathToSourceCsvFile`) column containing Blackbaud Usesr IDs to scan for name pronunciations. Required if opening a CSV file. (Default: `"User ID"`)
+Column label for CSV input (<u>`pathToSourceCsvFile`</u>) column containing Blackbaud Usesr IDs to scan for name pronunciations. Required if opening a CSV file. (Default: `"User ID"`)
 
 #### `--user=<user>`
 
-A Blackbaud user ID to scan. May be set multiple times to scan multiple individual users. If set, `pathToSourceCsvFile` path to CSV file is not required. (Default: ) Can be set multiple times
+A Blackbaud user ID to scan. May be set multiple times to scan multiple individual users. If set, <u>`pathToSourceCsvFile`</u> path to CSV file is not required. (Default: ) Can be set multiple times
 
 #### `--download`
 

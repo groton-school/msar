@@ -16,11 +16,9 @@ npm install -g msar
 
 It depends on [Node.js](https://nodejs.org/) which provides the `npm` package manager tool when installed.
 
-## Usage:
+Usage:
 
-```bash
-  msar schoolWebsite -h --u=<username> --p=<password> --o=<outputPath> --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=<`https://example.myschoolapp.com`> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> `[...]`
-```
+<pre lang="bash">msar schoolWebsite -h --u=&lt;username&gt; --p=&lt;password&gt; --o=&lt;outputPath&gt; --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=&lt;`https://example.myschoolapp.com`&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>[...]</u></pre>
 
 ## Arguments
 

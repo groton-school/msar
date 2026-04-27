@@ -16,37 +16,37 @@ npm install -g msar
 
 It depends on [Node.js](https://nodejs.org/) which provides the `npm` package manager tool when installed.
 
-## Usage:
+Usage:
 
-```bash
-  msar inbox -h --v=<val> --o=<outputPath> --u=<username> --p=<password> --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=<column> --searchIn=<searchIn> --sso=<sso> --mfa=<mfa> --viewportWidth=<viewportWidth> --viewportHeight=<viewportHeight> --opAccount=<example.1password.com> --opItem=<1Password unique identifier> --opToken=<token value> --logFilePath=<logFilePath> --stdoutLevel=<all|trace|debug|info|warning|error|fatal|off> --fileLevel=<all|trace|debug|info|warning|error|fatal|off> --concurrency=<concurrency> --rate=<rate> `url` `csv`
-```
+<pre lang="bash">msar inbox -h --v=&lt;val&gt; --o=&lt;outputPath&gt; --u=&lt;username&gt; --p=&lt;password&gt; --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=&lt;column&gt; --searchIn=&lt;searchIn&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>url</u> <u>csv</u></pre>
 
-## Arguments
+
+
+### Positional arguments
+
+#### <u>`url`</u>
+
+The URL of the LMS instance as <u>`url`</u> (required)
+
+#### <u>`csv`</u>
+
+Path to a CSV file of user identifiers to analyze as <u>`csv`</u> (optional if `--val` is set)
+
+### Arguments
 
 #### `-h --help`
 
 Show this usage information
 
-### Positional arguments
-
-#### `url`
-
-The URL of the LMS instance as `url` (required)
-
-#### `csv`
-
-Path to a CSV file of user identifiers to analyze as `csv` (optional if `--val` is set)
-
 ### Inbox options
 
-Analyze inbox contents for a user or users. Include the URL of the LMS instance as `url` (required) and path to a CSV file of user identifiers to analyze as `csv` (optional if `--val` is set). Intended to receive a generic `UserWorkList.csv` export from the LMS as input, outputting the same CSV file to `--outputPath` with analysis columns appended.
+Analyze inbox contents for a user or users. Include the URL of the LMS instance as <u>`url`</u> (required) and path to a CSV file of user identifiers to analyze as <u>`csv`</u> (optional if `--val` is set). Intended to receive a generic `UserWorkList.csv` export from the LMS as input, outputting the same CSV file to `--outputPath` with analysis columns appended.
 
 Due to the number of impersonated clicks necessary for this workflow, running `--headless` reduces the likelihood of stray user actions interfering with the script.
 
 #### `--column=<column>`
 
-Column label for CSV input (`csv`) column containing user identifier for inboxes to analyze. Required if opening a CSV of user identifiers. (Default: `"User ID"`)
+Column label for CSV input (<u>`csv`</u>) column containing user identifier for inboxes to analyze. Required if opening a CSV of user identifiers. (Default: `"User ID"`)
 
 #### `--searchIn=<searchIn>`
 
@@ -54,7 +54,7 @@ Field to search for user identifier. Required for all uses. One of `"LastName"`,
 
 #### `-v<val> --val=<val>`
 
-A user identifier to query. Requires corresponding `--searchIn`. If set, `csv` path to CSV file is not required. (Default: ) Can be set multiple times
+A user identifier to query. Requires corresponding `--searchIn`. If set, <u>`csv`</u> path to CSV file is not required. (Default: ) Can be set multiple times
 
 ### Output options
 

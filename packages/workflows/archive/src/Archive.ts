@@ -13,14 +13,19 @@ import ora from 'ora';
 import * as Cache from './Cache.js';
 import { Spider } from './Spider.js';
 
+const SNAPSHOT_PATH = 'snapshotPath';
+
+Positionals.require({
+  [SNAPSHOT_PATH]: { description: `Path to an existing snapshot file` }
+});
+Positionals.allowOnlyNamedArgs();
+
 export type Configuration = Plugin.Configuration & {
   include?: RegExp | RegExp[];
   exclude?: RegExp | RegExp[];
   snapshotPath?: string;
   continue?: boolean;
 };
-
-const SNAPSHOT_PATH = 'snapshotPath';
 
 export const name = '@msar/download';
 
@@ -53,10 +58,6 @@ export function configure(config: Configuration = {}) {
 }
 
 export function options(): Plugin.Options {
-  Positionals.require({
-    [SNAPSHOT_PATH]: { description: `Path to an existing snapshot file` }
-  });
-  Positionals.allowOnlyNamedArgs();
   return {
     man: [
       { level: 1, text: 'Archive options' },

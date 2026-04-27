@@ -29,16 +29,7 @@
     "csv": "^6.5.1"
   },
   "devDependencies": {
-    "@msar/output": "workspace:*",
-    "@msar/puppeteer-session": "workspace:*",
-    "@msar/workflow": "workspace:*",
-    "@qui-cli/core": "^6.0.4",
-    "@qui-cli/env": "^5.1.2",
-    "@qui-cli/log": "^4.0.4",
-    "@qui-cli/markdown": "^1.2.2",
-    "@qui-cli/plugin": "^4.1.1",
-    "@qui-cli/progress": "^3.1.0",
-    "@qui-cli/root": "^3.1.1",
+    "@qui-cli/markdown": "^2.0.1",
     "@tsconfig/node-lts": "^24.0.0",
     "commit-and-tag-version": "^12.7.1",
     "del-cli": "^6.0.0",
@@ -47,13 +38,13 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@msar/output": "0.x",
-    "@msar/puppeteer-session": "0.x",
-    "@msar/workflow": "0.x",
-    "@qui-cli/core": ">=3",
+    "@msar/output": "workspace:*",
+    "@msar/puppeteer-session": "workspace:*",
+    "@msar/workflow": "workspace:*",
+    "@qui-cli/core": ">=7",
     "@qui-cli/env": ">=5",
-    "@qui-cli/log": ">=3",
-    "@qui-cli/plugin": ">=3",
+    "@qui-cli/log": ">=4",
+    "@qui-cli/plugin": ">=4",
     "@qui-cli/progress": ">=3",
     "@qui-cli/root": ">=3"
   }

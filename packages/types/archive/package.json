@@ -28,7 +28,6 @@
   "devDependencies": {
     "@battis/descriptive-types": "^0.2.6",
     "@battis/typescript-tricks": "^0.7.9",
-    "@msar/types.snapshot": "workspace:*",
     "@tsconfig/node-lts": "^24.0.0",
     "commit-and-tag-version": "^12.7.1",
     "del-cli": "^6.0.0",
@@ -36,6 +35,6 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@msar/types.snapshot": ">=0.1.3 <1.0"
+    "@msar/types.snapshot": "workspace:*"
   }
 }
