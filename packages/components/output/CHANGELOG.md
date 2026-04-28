@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/groton-school/myschoolapp-reporting/compare/component/output/0.1.8...component/output/0.1.9) (2026-04-28)
+
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+
+
+### Bug Fixes
+
+* env-1password does not populate process.env ([778798d](https://github.com/groton-school/myschoolapp-reporting/commit/778798da556bb75d059f046e5c7ebcd6bdb183a4))
+* explicitly target Node LTS (and bump dependencies) ([8be02f7](https://github.com/groton-school/myschoolapp-reporting/commit/8be02f74afef8652904e6daee10cce69738b7260))
+* prep for TS6 ([4c89d29](https://github.com/groton-school/myschoolapp-reporting/commit/4c89d290aeb97c18ac5eedd2ad08d30a39d16b24))
+* use more reliable stream-handling approach ([02b6fc6](https://github.com/groton-school/myschoolapp-reporting/commit/02b6fc6357229c94881cca3d83ff9764e63f36b9))
+
 ## [0.1.8](https://github.com/groton-school/myschoolapp-reporting/compare/component/output/0.1.7...component/output/0.1.8) (2025-12-26)
 
 
