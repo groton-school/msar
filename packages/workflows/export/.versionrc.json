@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tag-prefix": "workflow/export/",
+  "releaseCommitMessageFormat": "chore: release @msar/export@{{currentTag}}"
+}

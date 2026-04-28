@@ -36,8 +36,9 @@
   },
   "prettier": "@battis/prettier-config",
   "dependencies": {
-    "@1password/sdk": "^0.3.1",
+    "@1password/sdk": "^0.4.0",
     "@msar/archive": "workspace:*",
+    "@msar/export": "workspace:*",
     "@msar/inbox": "workspace:*",
     "@msar/pronunciation": "workspace:*",
     "@msar/school-website": "workspace:*",

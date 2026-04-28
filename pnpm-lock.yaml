@@ -533,14 +533,14 @@ importers:
   packages/workflows/export:
     dependencies:
       '@msar/canvas-import':
-        specifier: ^0.1.4
-        version: 0.1.4(2de4df5e0d0c6f4a06adedf627ba2f8c)
+        specifier: ^0.1.5
+        version: 0.1.5(@msar/debug@0.1.3(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@types/ejs@3.1.5)(@types/node@24.12.2)
       '@msar/output':
         specifier: workspace:*
         version: link:../../components/output
       '@msar/types.import':
-        specifier: ^0.1.2
-        version: 0.1.2(@msar/types.snapshot@0.2.1)
+        specifier: ^0.1.3
+        version: 0.1.3(@msar/types.snapshot@0.2.2)
       '@qui-cli/colors':
         specifier: '>=3'
         version: 3.2.4
@@ -562,6 +562,9 @@ importers:
       ejs:
         specifier: ^5.0.2
         version: 5.0.2
+      ora:
+        specifier: ^8.2.0
+        version: 8.2.0
     devDependencies:
       '@battis/descriptive-types':
         specifier: ^0.2.6
@@ -1349,41 +1352,41 @@ packages:
     resolution: {integrity: sha512-A8AlzetnS2WIuhijdAzKUyFpR5YbLLfV3luQ4lzBgIBgRfuoBDZeF+RSZPhra+7A6/zTUlrbhKZIOi/MNhqgvQ==}
     engines: {node: '>=18.0.0'}
 
-  '@msar/canvas-import@0.1.4':
-    resolution: {integrity: sha512-z4sCT7I7oq50TxfRFlPm0kOaaWylQ9bAZLt2ii7SYTxLqFdGYxnSb5CFC+W9+oysal4OmOVX41MmdER8LRW8bw==}
+  '@msar/canvas-import@0.1.5':
+    resolution: {integrity: sha512-Opj8oOoS8b+JiZTtzYNEKaREFVH3I9hS1GhvegFNHbby9gpWzeEcDlLzjl4nYwIRTSMLUbeDRGUbFrnYpbZXNg==}
     hasBin: true
 
-  '@msar/debug@0.1.2':
-    resolution: {integrity: sha512-xmrnOrAkJ+oGZDQwwJk+VyllyjKqvng7JOiVkNtGdpb38SOIt0kUF/ALfW7n7RfDFE/X0MVF1tB+FQEbNu92cQ==}
+  '@msar/debug@0.1.3':
+    resolution: {integrity: sha512-fUrwo1VQXkzeDmQUB4brk0tVX9Goy8E0Z+qDfLlCleam/vaok5ERjuUIBIWrx67yGHx0+QHgToeP7kJqEDJc5w==}
     peerDependencies:
-      '@qui-cli/log': 4.x
-      '@qui-cli/plugin': 4.x
+      '@qui-cli/log': '>=4'
+      '@qui-cli/plugin': '>=4'
 
-  '@msar/output@0.1.8':
-    resolution: {integrity: sha512-TzMFfw3Jmjb0F8Z4eA32T0P96bkM1623zuKhgG8Ss1ck7igu2c/+EhkX8/15USUMi0f6BpAcJhRvgy3sqOx2ZQ==}
+  '@msar/output@0.1.9':
+    resolution: {integrity: sha512-frPI63765g3vXM1V9qzAuI58+6wF8ZG/ZcPzT2f1kqo2tMWVIJ41nN6obvmxzoPZIW+sbaivJtgGmH7K5B7jwA==}
     peerDependencies:
-      '@msar/debug': 0.x
-      '@msar/workflow': 0.x
-      '@qui-cli/env-1password': 1.x
-      '@qui-cli/log': 4.x
-      '@qui-cli/plugin': 4.x
-      '@qui-cli/root': 3.x
+      '@msar/debug': 0.1.3
+      '@msar/workflow': 0.3.0
+      '@qui-cli/env': '>=5'
+      '@qui-cli/log': '>=4'
+      '@qui-cli/plugin': '>=4'
+      '@qui-cli/root': '>=3'
 
-  '@msar/types.archive@0.2.0':
-    resolution: {integrity: sha512-tYzT4g3d5kzKQnRDNzfUX+kavuJXKVFww7KYeiJ21wMbRn3uNxLduF2gfyBGYrAgoUkJvUq4sRizYBXTr4wmKg==}
+  '@msar/types.archive@0.2.1':
+    resolution: {integrity: sha512-CSIAbbA0fjxFL8IGvU/dVE4NhICom75YR/PV6cPx3Zfjed2l5tV0iz4T7T22uyqHs9qMGXFfYblyenE7+Wdkqw==}
     peerDependencies:
-      '@msar/types.snapshot': '>=0.1.3 <1.0'
+      '@msar/types.snapshot': 0.2.2
 
-  '@msar/types.import@0.1.2':
-    resolution: {integrity: sha512-cRfwdkcPzQL73KGLmFJNn+nzVNdNAmZ6315uAkfhDfeA3Fq9cTdtoaOZz3xuY5QVZdh/mAkFvY+jlObWv/yHrA==}
+  '@msar/types.import@0.1.3':
+    resolution: {integrity: sha512-/kuWsqUTwe1TlWsQIl3QBOTvwP8ZK7a2l8gRF94syBARbUppwqWn2CaBfYDqHsvg8t77cBUboaYIvnZwOxpKdg==}
 
-  '@msar/types.snapshot@0.2.1':
-    resolution: {integrity: sha512-SpUdO1uuSP3Io+/FJ0hZNsHXfaGeePArxvKYSPUV/OPi4YghDPfl4+IwiTqxEiljycTP1fR3S2hBH3UnzrsM9Q==}
+  '@msar/types.snapshot@0.2.2':
+    resolution: {integrity: sha512-qPN6+AU0D0sjY3SHh/WX0v1OygiviRzkZYI/8dkrpYqHJQtnyWLxQF1c3CDWgW7XGsFFCrEJdDUNM/q68i6hVg==}
 
-  '@msar/workflow@0.2.4':
-    resolution: {integrity: sha512-e2dBNtu+nsLhfSnfaDF1Y6MGUaGLZg0fSweoF7OXKzwqBuM0YdWmgH0uR3O2c7PAr9zoHZGfH14BRdk+0rIOuw==}
+  '@msar/workflow@0.3.0':
+    resolution: {integrity: sha512-5w6lRRRJnjhGLjNSf5FlCH1fNkbulXpu1albe7NhtQ62VfbbVDON9eeYwkY9dZWJlA/tlOaL+AYpwj4abaqCGQ==}
     peerDependencies:
-      '@qui-cli/plugin': 4.x
+      '@qui-cli/plugin': '>=4'
 
   '@napi-rs/wasm-runtime@0.2.4':
     resolution: {integrity: sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ==}
@@ -1655,25 +1658,11 @@ packages:
   '@qui-cli/colors@3.2.4':
     resolution: {integrity: sha512-Shw5WdGuKTMUR2796LtMu1x47TFdce/ACp/kLjaUrMY6zbVEMhWUsN5DyTzKysVUC/wE/L5RyMshcicRTqReqg==}
 
-  '@qui-cli/core@6.0.4':
-    resolution: {integrity: sha512-F2E8/qUnDFGyPhL0iX9aVOI4of6ss6VFGiFR3wcOzoVKnnpQLIT3mrV4/aVEXPYklZcnWy7SLwqNNfnRzhztrw==}
-    peerDependencies:
-      '@qui-cli/colors': '>=3.2'
-      '@qui-cli/plugin': '>=3'
-
   '@qui-cli/core@7.0.0':
     resolution: {integrity: sha512-fjmCpAhYkCcXCDE5cqT5zySnnfNTi851y7UuGjz0n67Hzw04Pd76dWXmBxCuBi4grfvHiYtOfUwOI46Oa8Ax0w==}
     peerDependencies:
       '@qui-cli/colors': '>=3.2'
       '@qui-cli/plugin': '>=3'
-
-  '@qui-cli/env-1password@1.2.10':
-    resolution: {integrity: sha512-0d+viaDt3b9eZEE19ymP1SKAxkZeVD5WUCl42QiqI92n/UB04m2JKJOZO6Ughqy1ItgyAq3ZZKh7zpdivzxzSg==}
-    peerDependencies:
-      '@1password/sdk': 0.3.x
-      '@battis/import-package-json': 0.x
-      '@qui-cli/env': '>=5'
-      '@qui-cli/shell': '>=3'
 
   '@qui-cli/env@5.2.0':
     resolution: {integrity: sha512-N5ZOERSBcqDpQ2+Rreahk07sZ9zq1OYizv9AHVKEKo14+R6u1BTPOIWRXH8l2NqbgnqRk2BkvrypOMXUbbaolg==}
@@ -2599,8 +2588,8 @@ packages:
     resolution: {integrity: sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==}
     engines: {node: '>= 0.4'}
 
-  datadirect@0.4.8:
-    resolution: {integrity: sha512-fkfTzoyyg5wkBDN7LfOGZ6f7NuErYWJxaLNv1YBLNs7w2eWNxQ4BHWW6kx7gkHcPHNmHTwfJx6k9pyVReCtGYw==}
+  datadirect@0.5.0:
+    resolution: {integrity: sha512-x6vLn4pWQVkY4/tGRAtRQyyWHyXC9Pgx6/+MF7YGkUdWuY4uSnOqtpN6VHsV35eTS75ztyoWHFTddPBh7WleSg==}
 
   dateformat@3.0.3:
     resolution: {integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==}
@@ -6420,19 +6409,19 @@ snapshots:
       - supports-color
       - typescript
 
-  '@msar/canvas-import@0.1.4(2de4df5e0d0c6f4a06adedf627ba2f8c)':
+  '@msar/canvas-import@0.1.5(@msar/debug@0.1.3(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@types/ejs@3.1.5)(@types/node@24.12.2)':
     dependencies:
       '@1password/sdk': 0.4.0
       '@inquirer/prompts': 8.4.2(@types/node@24.12.2)
-      '@msar/output': 0.1.8(ada7ecc8bb177ff1a4f3bf64ab5d8f83)
-      '@msar/types.archive': 0.2.0(@msar/types.snapshot@0.2.1)
-      '@msar/types.import': 0.1.2(@msar/types.snapshot@0.2.1)
-      '@msar/types.snapshot': 0.2.1
-      '@msar/workflow': 0.2.4(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
+      '@msar/output': 0.1.9(3857ac1f7ecab6260507771ab70c69a8)
+      '@msar/types.archive': 0.2.1(@msar/types.snapshot@0.2.2)
+      '@msar/types.import': 0.1.3(@msar/types.snapshot@0.2.2)
+      '@msar/types.snapshot': 0.2.2
+      '@msar/workflow': 0.3.0(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
       '@oauth2-cli/canvas': 0.6.3(@qui-cli/colors@3.2.4)(@qui-cli/env@5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@types/ejs@3.1.5)(ejs@5.0.2)
       '@oauth2-cli/canvas-studio': 0.1.2(@qui-cli/colors@3.2.4)(@qui-cli/env@5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@types/ejs@3.1.5)(ejs@5.0.2)
       '@qui-cli/colors': 3.2.4
-      '@qui-cli/core': 6.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
+      '@qui-cli/core': 7.0.0(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
       '@qui-cli/env': 5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
       '@qui-cli/log': 4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
       '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
@@ -6447,47 +6436,46 @@ snapshots:
       string-strip-html: 13.5.3
     transitivePeerDependencies:
       - '@msar/debug'
-      - '@qui-cli/env-1password'
       - '@qui-cli/root'
       - '@qui-cli/shell'
       - '@types/ejs'
       - '@types/node'
       - supports-color
 
-  '@msar/debug@0.1.2(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
+  '@msar/debug@0.1.3(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
     dependencies:
       '@qui-cli/colors': 3.2.4
       '@qui-cli/log': 4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
       '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
 
-  '@msar/output@0.1.8(ada7ecc8bb177ff1a4f3bf64ab5d8f83)':
+  '@msar/output@0.1.9(3857ac1f7ecab6260507771ab70c69a8)':
     dependencies:
-      '@msar/debug': 0.1.2(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
-      '@msar/workflow': 0.2.4(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
+      '@msar/debug': 0.1.3(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
+      '@msar/workflow': 0.3.0(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
       '@qui-cli/colors': 3.2.4
-      '@qui-cli/env-1password': 1.2.10(@1password/sdk@0.4.0)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
+      '@qui-cli/env': 5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
       '@qui-cli/log': 4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
       '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
       '@qui-cli/root': 3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
 
-  '@msar/types.archive@0.2.0(@msar/types.snapshot@0.2.1)':
+  '@msar/types.archive@0.2.1(@msar/types.snapshot@0.2.2)':
     dependencies:
-      '@msar/types.snapshot': 0.2.1
-      datadirect: 0.4.8
+      '@msar/types.snapshot': 0.2.2
+      datadirect: 0.5.0
 
-  '@msar/types.import@0.1.2(@msar/types.snapshot@0.2.1)':
+  '@msar/types.import@0.1.3(@msar/types.snapshot@0.2.2)':
     dependencies:
-      '@msar/types.archive': 0.2.0(@msar/types.snapshot@0.2.1)
+      '@msar/types.archive': 0.2.1(@msar/types.snapshot@0.2.2)
       probe-image-size: 7.2.3
     transitivePeerDependencies:
       - '@msar/types.snapshot'
       - supports-color
 
-  '@msar/types.snapshot@0.2.1':
+  '@msar/types.snapshot@0.2.2':
     dependencies:
-      datadirect: 0.4.8
+      datadirect: 0.5.0
 
-  '@msar/workflow@0.2.4(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
+  '@msar/workflow@0.3.0(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
     dependencies:
       '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
 
@@ -6879,26 +6867,12 @@ snapshots:
     dependencies:
       chalk: 5.6.2
 
-  '@qui-cli/core@6.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
-    dependencies:
-      '@qui-cli/colors': 3.2.4
-      '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
-      jackspeak: 4.2.3
-      wrap-ansi: 10.0.0
-
   '@qui-cli/core@7.0.0(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))':
     dependencies:
       '@qui-cli/colors': 3.2.4
       '@qui-cli/plugin': 4.1.2(@qui-cli/colors@3.2.4)
       jackspeak: 4.2.3
       wrap-ansi: 10.0.0
-
-  '@qui-cli/env-1password@1.2.10(@1password/sdk@0.4.0)(@battis/import-package-json@0.1.7)(@qui-cli/env@5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))':
-    dependencies:
-      '@1password/sdk': 0.4.0
-      '@battis/import-package-json': 0.1.7
-      '@qui-cli/env': 5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))
-      '@qui-cli/shell': 3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))
 
   '@qui-cli/env@5.2.0(@1password/sdk@0.4.0)(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))(@qui-cli/shell@3.1.4(@qui-cli/colors@3.2.4)(@qui-cli/log@4.0.4(@qui-cli/colors@3.2.4)(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))(@qui-cli/root@3.1.1(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4))))(@qui-cli/plugin@4.1.2(@qui-cli/colors@3.2.4)))':
     dependencies:
@@ -7877,7 +7851,7 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  datadirect@0.4.8: {}
+  datadirect@0.5.0: {}
 
   dateformat@3.0.3: {}
 
@@ -9097,7 +9071,7 @@ snapshots:
 
   jest-diff@29.7.0:
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       diff-sequences: 29.6.3
       jest-get-type: 29.6.3
       pretty-format: 29.7.0
@@ -10047,7 +10021,7 @@ snapshots:
       '@yarnpkg/parsers': 3.0.2
       '@zkochan/js-yaml': 0.0.7
       axios: 1.15.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-spinners: 2.6.1
       cliui: 8.0.1
@@ -10181,9 +10155,9 @@ snapshots:
   ora@5.3.0:
     dependencies:
       bl: 4.1.0
-      chalk: 4.1.0
+      chalk: 4.1.2
       cli-cursor: 3.1.0
-      cli-spinners: 2.6.1
+      cli-spinners: 2.9.2
       is-interactive: 1.0.0
       log-symbols: 4.1.0
       strip-ansi: 6.0.1
