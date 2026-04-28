@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.4](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.5.3...oauth2-cli/sky-api/0.5.4) (2026-04-28)
+
+
+### Bug Fixes
+
+* explicitly target Node LTS (and bump dependencies) ([8be02f7](https://github.com/groton-school/myschoolapp-reporting/commit/8be02f74afef8652904e6daee10cce69738b7260))
+* prep for TS6 ([4c89d29](https://github.com/groton-school/myschoolapp-reporting/commit/4c89d290aeb97c18ac5eedd2ad08d30a39d16b24))
+
 ## [0.5.3](https://github.com/groton-school/myschoolapp-reporting/compare/oauth2-cli/sky-api/0.5.2...oauth2-cli/sky-api/0.5.3) (2026-02-21)
 
 
