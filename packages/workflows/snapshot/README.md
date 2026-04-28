@@ -80,7 +80,7 @@ Capture all sections; positional argument <u>`url`</u> is used to identify MySch
 
 #### `--fromDate=<fromDate>`
 
-Starting date for date-based filter where relevant (Default: `"4/27/2026"`)
+Starting date for date-based filter where relevant (Default: `"today's date"`)
 
 #### `--toDate=<toDate>`
 

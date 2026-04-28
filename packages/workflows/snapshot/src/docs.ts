@@ -8,6 +8,12 @@ import * as Snapshot from './SnapshotMultiple.js';
 
 await register(Snapshot);
 
+Snapshot.configure({
+  fromDate: "today's date",
+  active: true,
+  future: true,
+  expired: true
+});
 Env.configure({ root: path.dirname(import.meta.dirname) });
 Markdown.configure({
   outputPath: path.join(import.meta.dirname, '../README.md'),
