@@ -41,8 +41,10 @@ At present the following verbs are implemented:
 
 - [`snapshot`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/snapshot#readme) the course data for one or more classes from the LMS to a JSON data file.
 - [`archive`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/archive#readme) the supporting files for an existing JSON snapshot file.
+- [`export`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/export#readme) the archived snapshot to a human-readable directory f files
 - [`inbox`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/inbox#readme) analytics
 - [`pronunciation`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/pronunciation#readme) recording downloads
+- Download an archive of [`schoolWebsite`](https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/school-website#readme) posts and media
 
 For each command, the `--help` (or `-h`) flag provides usage instructions:
 
