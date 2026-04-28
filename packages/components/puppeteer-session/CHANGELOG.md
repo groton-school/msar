@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.0](https://github.com/groton-school/myschoolapp-reporting/compare/component/puppeteer-session/0.1.6...component/puppeteer-session/0.2.0) (2026-04-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to @oauth2-cli/qui-cli
+
+### Features
+
+* compile against Node.js v24 (current active version) ([dc67440](https://github.com/groton-school/myschoolapp-reporting/commit/dc6744054bc42139c4d17b1aca2ef9b057827f7f))
+* update to @oauth2-cli/qui-cli ([2240c56](https://github.com/groton-school/myschoolapp-reporting/commit/2240c5653e9e4af08e71036264735c47b68936d3))
+
+
+### Bug Fixes
+
+* env-1password does not populate process.env ([778798d](https://github.com/groton-school/myschoolapp-reporting/commit/778798da556bb75d059f046e5c7ebcd6bdb183a4))
+* explicitly target Node LTS (and bump dependencies) ([8be02f7](https://github.com/groton-school/myschoolapp-reporting/commit/8be02f74afef8652904e6daee10cce69738b7260))
+* more generous definition of "ready" ([a53e7d6](https://github.com/groton-school/myschoolapp-reporting/commit/a53e7d62e7045f89d984cb0e0210ec35238cde10))
+* prep for TS6 ([4c89d29](https://github.com/groton-school/myschoolapp-reporting/commit/4c89d290aeb97c18ac5eedd2ad08d30a39d16b24))
+
 ## [0.1.6](https://github.com/groton-school/myschoolapp-reporting/compare/component/puppeteer-session/0.1.5...component/puppeteer-session/0.1.6) (2025-12-26)
 
 
