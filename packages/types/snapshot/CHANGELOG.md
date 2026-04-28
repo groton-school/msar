@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.2.1...types/snapshot/0.2.2) (2026-04-28)
+
+
+### Bug Fixes
+
+* explicitly target Node LTS (and bump dependencies) ([8be02f7](https://github.com/groton-school/myschoolapp-reporting/commit/8be02f74afef8652904e6daee10cce69738b7260))
+* prep for TS6 ([4c89d29](https://github.com/groton-school/myschoolapp-reporting/commit/4c89d290aeb97c18ac5eedd2ad08d30a39d16b24))
+
 ## [0.2.1](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.2.0...types/snapshot/0.2.1) (2026-02-18)
 
 
