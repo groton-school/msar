@@ -177,8 +177,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.0
       puppeteer:
-        specifier: ^23.11.1
-        version: 23.11.1(typescript@5.9.3)
+        specifier: ^24.42.0
+        version: 24.42.0(typescript@5.9.3)
     devDependencies:
       '@battis/typescript-tricks':
         specifier: ^0.7.9
@@ -716,8 +716,8 @@ importers:
         specifier: ^4.1.5
         version: 4.1.5
       puppeteer:
-        specifier: ^23.11.1
-        version: 23.11.1(typescript@5.9.3)
+        specifier: ^24.42.0
+        version: 24.42.0(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -9071,7 +9071,7 @@ snapshots:
 
   jest-diff@29.7.0:
     dependencies:
-      chalk: 4.1.2
+      chalk: 4.1.0
       diff-sequences: 29.6.3
       jest-get-type: 29.6.3
       pretty-format: 29.7.0
@@ -9325,7 +9325,7 @@ snapshots:
 
   log-symbols@4.1.0:
     dependencies:
-      chalk: 4.1.2
+      chalk: 4.1.0
       is-unicode-supported: 0.1.0
 
   log-symbols@6.0.0:
@@ -10021,7 +10021,7 @@ snapshots:
       '@yarnpkg/parsers': 3.0.2
       '@zkochan/js-yaml': 0.0.7
       axios: 1.15.2
-      chalk: 4.1.2
+      chalk: 4.1.0
       cli-cursor: 3.1.0
       cli-spinners: 2.6.1
       cliui: 8.0.1
@@ -10155,9 +10155,9 @@ snapshots:
   ora@5.3.0:
     dependencies:
       bl: 4.1.0
-      chalk: 4.1.2
+      chalk: 4.1.0
       cli-cursor: 3.1.0
-      cli-spinners: 2.9.2
+      cli-spinners: 2.6.1
       is-interactive: 1.0.0
       log-symbols: 4.1.0
       strip-ansi: 6.0.1

@@ -83,7 +83,13 @@ export class Downloader
 
     client.on(
       'Fetch.requestPaused',
-      (async (requestPausedEvent: Protocol.Fetch.RequestPausedEvent) => {
+      (async (
+        // FIXME there has GOT to be a better way to handle this typing!
+        requestPausedEvent: Omit<
+          Protocol.Fetch.RequestPausedEvent,
+          'resourceType'
+        >
+      ) => {
         const { requestId } = requestPausedEvent;
         const reqUrl = new URL(requestPausedEvent.request.url);
         const fetchUrl = new URL(url);
@@ -226,7 +232,7 @@ export class Downloader
   }
 
   private asAttachment(
-    requestPausedEvent: Protocol.Fetch.RequestPausedEvent
+    requestPausedEvent: Omit<Protocol.Fetch.RequestPausedEvent, 'resourceType'>
   ): Protocol.Fetch.FulfillRequestRequest {
     const responseHeaders = requestPausedEvent.responseHeaders || [];
     const i = responseHeaders.findIndex(
