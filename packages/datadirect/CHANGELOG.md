@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.1](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.5.0...datadirect/0.5.1) (2026-06-01)
+
+
+### Features
+
+* add support for /api/download/forpage and /api/downloadcategory endpoints ([89ce8c7](https://github.com/groton-school/myschoolapp-reporting/commit/89ce8c7b6d4d83cbd562507b620c693a4aac5d73))
+
 ## [0.5.0](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.4.8...datadirect/0.5.0) (2026-04-28)
 
 
