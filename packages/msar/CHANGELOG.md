@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.9.1](https://github.com/groton-school/myschoolapp-reporting/compare/msar/0.9.0...msar/0.9.1) (2026-06-01)
+
+
+### Features
+
+* export archived snapshots to a human-readable directory of files using `msar export` ([7ba90e5](https://github.com/groton-school/myschoolapp-reporting/commit/7ba90e5b39e923f7c6fd4edaed2970573b043dc0))
+
+
+### Bug Fixes
+
+* explicitly target Node LTS (and bump dependencies) ([8be02f7](https://github.com/groton-school/myschoolapp-reporting/commit/8be02f74afef8652904e6daee10cce69738b7260))
+* prep for TS6 ([4c89d29](https://github.com/groton-school/myschoolapp-reporting/commit/4c89d290aeb97c18ac5eedd2ad08d30a39d16b24))
+
 ## [0.9.0](https://github.com/groton-school/myschoolapp-reporting/compare/msar/0.8.9...msar/0.9.0) (2026-02-21)
 
 
