@@ -12,6 +12,7 @@ export type Configuration = Plugin.Configuration & {
   news?: boolean;
   photoAlbums?: boolean;
   videos?: boolean;
+  downloads?: boolean;
 };
 
 export const name = 'school-website';
@@ -20,7 +21,8 @@ const config: Configuration = {
   audio: true,
   news: true,
   photoAlbums: true,
-  videos: true
+  videos: true,
+  downloads: true
 };
 
 export function configure(proposal: Partial<Configuration> = {}) {
@@ -66,6 +68,10 @@ export function options(): Plugin.Options {
       videos: {
         description: `Download videos, requires ${Colors.optionArg('--url')})`,
         default: config.videos
+      },
+      downloads: {
+        description: `Download downloads, requires ${Colors.optionArg('--url')}`,
+        default: config.downloads
       }
     }
   };
@@ -104,6 +110,15 @@ export async function run() {
       );
     }
     session = await ContentManagement.Videos.download(url, session);
+  }
+  if (config.downloads) {
+    const { url } = config;
+    if (!url) {
+      throw new Error(
+        `${Colors.optionArg('--url')} is required to download downloads`
+      );
+    }
+    session = await ContentManagement.Downloads.download(url, session);
   }
   if (session) {
     session.close();

@@ -18,7 +18,7 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 
 Usage:
 
-<pre lang="bash">msar schoolWebsite -h --u=&lt;username&gt; --p=&lt;password&gt; --o=&lt;outputPath&gt; --announcements --audio --news --photoAlbums --videos --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=&lt;`https://example.myschoolapp.com`&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>[...]</u></pre>
+<pre lang="bash">msar schoolWebsite -h --u=&lt;username&gt; --p=&lt;password&gt; --o=&lt;outputPath&gt; --announcements --audio --news --photoAlbums --videos --downloads --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --url=&lt;`https://example.myschoolapp.com`&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>[...]</u></pre>
 
 ## Arguments
 
@@ -53,6 +53,10 @@ Download photo albums (Default: `true`, use `--no-photoAlbums` to disable)
 #### `--videos`
 
 Download videos, requires `--url`) (Default: `true`, use `--no-videos` to disable)
+
+#### `--downloads`
+
+Download downloads, requires `--url` (Default: `true`, use `--no-downloads` to disable)
 
 ### Puppeteer options
 
