@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/school-website/0.2.1...workflow/school-website/0.2.2) (2026-06-01)
+
+
+### Features
+
+* include downloads schoolWebsite archive ([2b9f921](https://github.com/groton-school/myschoolapp-reporting/commit/2b9f9213832429f8dbf6e5d3dc58fe07695a1ab2))
+
 ## [0.2.1](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/school-website/0.2.0...workflow/school-website/0.2.1) (2026-04-28)
 
 
