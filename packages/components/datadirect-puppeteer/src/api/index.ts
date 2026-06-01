@@ -8,6 +8,8 @@ export * as AudioCategory from './AudioCategory.js';
 export * as Competency from './Competency.js';
 export * as Course from './Course.js';
 export * as datadirect from './datadirect.js';
+export * as download from './download.js';
+export * from './downloadcategory.js';
 export * as googleapi from './googleapi.js';
 export * as gradebook from './gradebook.js';
 export * as LtiTool from './LtiTool.js';
