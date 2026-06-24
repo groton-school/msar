@@ -3,6 +3,8 @@ import { PuppeteerSession } from '@msar/puppeteer-session';
 export * as assessment from './assessment.js';
 export * as assignment from './assignment.js';
 export * as Assignment2 from './Assignment2.js';
+export * as athletics from './athletics.js';
+export * as athleticsSpa from './athleticsSpa.js';
 export * as audio from './audio.js';
 export * as AudioCategory from './AudioCategory.js';
 export * as Competency from './Competency.js';
