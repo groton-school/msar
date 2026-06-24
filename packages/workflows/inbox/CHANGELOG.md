@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/inbox/0.1.8...workflow/inbox/0.1.9) (2026-06-24)
+
+
+### Bug Fixes
+
+* bump dependencies ([1005200](https://github.com/groton-school/myschoolapp-reporting/commit/1005200bc7d8440cd051cb67522c6cf1dacaf061))
+
 ## [0.1.8](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/inbox/0.1.7...workflow/inbox/0.1.8) (2026-04-28)
 
 
