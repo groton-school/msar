@@ -27,7 +27,7 @@
     "async-mutex": "^0.5.0",
     "datadirect": "workspace:*",
     "ora": "^8.2.0",
-    "puppeteer": "^24.43.1"
+    "puppeteer": "^25.1.0"
   },
   "devDependencies": {
     "@battis/typescript-tricks": "^0.7.9",
@@ -42,5 +42,8 @@
     "@qui-cli/env": ">=5",
     "@qui-cli/log": ">=4",
     "@qui-cli/plugin": ">=4"
+  },
+  "allowScripts": {
+    "puppeteer": true
   }
 }

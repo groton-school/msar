@@ -9,6 +9,10 @@ packages:
   - '!packages/workflows'
   - packages/workflows/*
 
+allowBuilds:
+  nx: true
+  puppeteer: true
+
 onlyBuiltDependencies:
   - esbuild
   - nx

@@ -8,7 +8,7 @@ import { stringify } from 'csv';
 import { existsSync } from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { Handler, HTTPRequest, HTTPResponse } from 'puppeteer';
+import type { Handler, HTTPRequest, HTTPResponse } from 'puppeteer';
 
 type ScanOptions = {
   data: Record<string, string | number>[];

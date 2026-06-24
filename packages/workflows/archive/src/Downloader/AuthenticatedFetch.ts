@@ -7,7 +7,7 @@ import { EventEmitter } from 'node:events';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { Protocol } from 'puppeteer';
+import type { Protocol } from 'puppeteer';
 import { DownloadData, DownloadError } from '../Cache.js';
 import {
   ContentDisposition,
