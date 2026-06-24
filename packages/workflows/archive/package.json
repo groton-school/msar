@@ -27,7 +27,7 @@
   "dependencies": {
     "@msar/types.archive": "workspace:*",
     "@msar/types.snapshot": "workspace:*",
-    "@qui-cli/colors": "^3.2.4",
+    "@oauth2-cli/sky-api": "workspace:*",
     "content-disposition": "^0.5.4",
     "ora": "^8.2.0",
     "p-queue": "^8.1.1"
@@ -51,6 +51,7 @@
     "@msar/rate-limiter": "workspace:*",
     "@msar/snapshot": "workspace:*",
     "@msar/workflow": "workspace:*",
+    "@qui-cli/colors": ">=3.2",
     "@qui-cli/core": ">=7",
     "@qui-cli/env": ">=5",
     "@qui-cli/log": ">=4",
