@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/archive/0.2.1...workflow/archive/0.2.2) (2026-06-24)
+
+
+### Bug Fixes
+
+* bump dependencies ([1005200](https://github.com/groton-school/myschoolapp-reporting/commit/1005200bc7d8440cd051cb67522c6cf1dacaf061))
+* update to current version of Puppeteer ([afe5782](https://github.com/groton-school/myschoolapp-reporting/commit/afe578263328a250465927f566ce23da7a56f668))
+
 ## [0.2.1](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/archive/0.2.0...workflow/archive/0.2.1) (2026-04-28)
 
 
