@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.2](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.5.1...datadirect/0.5.2) (2026-06-25)
+
+
+### Features
+
+* add athletic results ([9a18e2a](https://github.com/groton-school/myschoolapp-reporting/commit/9a18e2adee13dacf53400728925b2f0b67100200))
+* add selection of athletics endpoints ([284649f](https://github.com/groton-school/myschoolapp-reporting/commit/284649f517c905a7324eb8bc3133d63d36469315))
+
 ## [0.5.1](https://github.com/groton-school/myschoolapp-reporting/compare/datadirect/0.5.0...datadirect/0.5.1) (2026-06-01)
 
 
