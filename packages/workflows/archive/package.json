@@ -2,10 +2,10 @@
   "name": "@msar/archive",
   "version": "0.2.3",
   "description": "Create a local archive from a @msar/snapshot",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/archive#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/workflows/archive#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/workflows/archive"
   },
   "author": {

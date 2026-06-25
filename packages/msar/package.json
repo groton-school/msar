@@ -11,10 +11,10 @@
     "reporting",
     "analytics"
   ],
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/msar#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/msar#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/msar"
   },
   "license": "GPL-3.0",

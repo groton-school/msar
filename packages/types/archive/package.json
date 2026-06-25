@@ -1,10 +1,10 @@
 {
   "name": "@msar/types.archive",
   "version": "0.2.1",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/types/archive#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/types/archive#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/types/archive"
   },
   "author": {

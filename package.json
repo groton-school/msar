@@ -1,9 +1,9 @@
 {
   "description": "A collection of packages for working with the Blackbaud LMS's front-end APIs",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting#readme",
+  "homepage": "https://github.com/groton-school/msar#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git"
+    "url": "https://github.com/groton-school/msar.git"
   },
   "author": {
     "name": "Seth Battis",

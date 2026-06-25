@@ -1,10 +1,10 @@
 {
   "name": "@msar/athletics",
   "version": "0.0.0",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/athletics#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/workflows/athletics#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/workflows/athletics"
   },
   "author": {

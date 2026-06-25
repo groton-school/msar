@@ -8,10 +8,10 @@
     "oauth",
     "cli"
   ],
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/oauth2-cli/sky-api#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/oauth2-cli/sky-api#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/oauth2-cli/sky-api"
   },
   "author": {

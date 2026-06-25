@@ -1,10 +1,10 @@
 {
   "name": "@msar/workflow",
   "version": "0.3.0",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/components/workflow#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/workflow#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/components/workflow"
   },
   "author": {

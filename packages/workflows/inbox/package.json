@@ -2,10 +2,10 @@
   "name": "@msar/inbox",
   "version": "0.1.9",
   "description": "Analyze the message inbox data",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/workflows/inbox#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/workflows/inbox#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/workflows/inbox"
   },
   "author": {

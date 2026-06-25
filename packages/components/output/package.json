@@ -1,10 +1,10 @@
 {
   "name": "@msar/output",
   "version": "0.1.9",
-  "homepage": "https://github.com/groton-school/myschoolapp-reporting/tree/main/packages/components/output#readme",
+  "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/output#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groton-school/myschoolapp-reporting.git",
+    "url": "https://github.com/groton-school/msar.git",
     "directory": "packages/components/output"
   },
   "author": {
