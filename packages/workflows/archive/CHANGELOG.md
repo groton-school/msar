@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.3](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/archive/0.2.2...workflow/archive/0.2.3) (2026-06-25)
+
+
+### Bug Fixes
+
+* non-relative path import of datadirect-puppeteer ([9e8af83](https://github.com/groton-school/myschoolapp-reporting/commit/9e8af8336c8134efa45ae6dde12e95029b7a2c39))
+
 ## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/archive/0.2.1...workflow/archive/0.2.2) (2026-06-24)
 
 
