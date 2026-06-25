@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.9.3](https://github.com/groton-school/msar/compare/msar/0.9.2...msar/0.9.3) (2026-06-25)
+
+
+### Features
+
+* download athletics data ([6aae57a](https://github.com/groton-school/msar/commit/6aae57a2ff4e41a376ebff1c62a6fcdab719dd2f))
+
 ## [0.9.2](https://github.com/groton-school/myschoolapp-reporting/compare/msar/0.9.1...msar/0.9.2) (2026-06-24)
 
 ## [0.9.1](https://github.com/groton-school/myschoolapp-reporting/compare/msar/0.9.0...msar/0.9.1) (2026-06-01)
