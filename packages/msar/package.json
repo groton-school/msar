@@ -38,6 +38,7 @@
   "dependencies": {
     "@1password/sdk": "^0.4.0",
     "@msar/archive": "workspace:*",
+    "@msar/athletics": "workspace:*",
     "@msar/export": "workspace:*",
     "@msar/inbox": "workspace:*",
     "@msar/pronunciation": "workspace:*",

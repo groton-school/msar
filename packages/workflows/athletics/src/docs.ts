@@ -1,0 +1,23 @@
+import { Core } from '@qui-cli/core';
+import { Env } from '@qui-cli/env';
+import { Markdown } from '@qui-cli/markdown';
+import { register } from '@qui-cli/plugin';
+import fs from 'node:fs';
+import path from 'node:path';
+import * as Athletics from './Athletics.js';
+
+await register(Athletics);
+
+Env.configure({ root: path.dirname(import.meta.dirname) });
+Markdown.configure({
+  outputPath: path.join(import.meta.dirname, '../README.md'),
+  pre: fs.readFileSync(
+    path.join(import.meta.dirname, '../docs/pre.md'),
+    'utf8'
+  ),
+  headingLevelAdjustment: 2,
+  overwrite: true
+});
+
+await Core.init();
+await Markdown.run();
