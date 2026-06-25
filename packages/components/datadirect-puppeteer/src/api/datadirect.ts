@@ -2,6 +2,7 @@ import { PuppeteerSession } from '@msar/puppeteer-session';
 import {
   AssignmentMarkingPeriods as AssMarkingPeriods,
   AssignmentSectionsForTeacher as AssSectionsForTeacher,
+  athleticresultsget as athleticresults,
   BulletinBoardContentGet as BulletinBoardContent,
   GroupPossibleContentGet as BulletinBoardContentTypes,
   common,
@@ -76,6 +77,11 @@ export const AssignmentSectionsForTeacher: PuppeteerSession.Fetchable.Binding<
   AssSectionsForTeacher.Payload,
   AssSectionsForTeacher.Response
 > = PuppeteerSession.Fetchable.bind(AssSectionsForTeacher);
+
+export const athleticresultsget: PuppeteerSession.Fetchable.Binding<
+  athleticresults.Payload,
+  athleticresults.Response
+> = PuppeteerSession.Fetchable.bind(athleticresults);
 
 export const GetValidFileTypes: PuppeteerSession.Fetchable.Binding<
   ValidFileTypes.Payload,

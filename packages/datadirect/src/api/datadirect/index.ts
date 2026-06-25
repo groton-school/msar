@@ -1,5 +1,6 @@
 export * as AssignmentMarkingPeriods from './AssignmentMarkingPeriods/index.js';
 export * as AssignmentSectionsForTeacher from './AssignmentSectionsForTeacher/index.js';
+export * as athleticresultsget from './athleticresultsget/index.js';
 export * as BulletinBoardContentGet from './BulletinBoardContentGet/index.js';
 export * as ContentItem from './common/ContentItem/index.js';
 export * as ContentType from './common/ContentType.js';
