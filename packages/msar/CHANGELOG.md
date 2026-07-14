@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.9.4](https://github.com/groton-school/msar/compare/msar/0.9.3...msar/0.9.4) (2026-07-14)
+
+
+### Bug Fixes
+
+* prepare for deprecation ([753f02e](https://github.com/groton-school/msar/commit/753f02ea038e2f4d38f005efdd123579ebb8b2d2))
+
 ## [0.9.3](https://github.com/groton-school/msar/compare/msar/0.9.2...msar/0.9.3) (2026-06-25)
 
 
