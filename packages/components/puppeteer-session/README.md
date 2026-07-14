@@ -1,7 +1,7 @@
-> We are no longer Blackbaud users. If you would like to discuss this tool, or the approaches it took to accessing otherwise inaccessible data in Blackbaud, please reach out directly to [Seth Battis](mailto:seth@battis.net?subject=msar)
+> This package was developed to work with data stored in Blackbaud SIS/LMS/SWS instances. We are no longer Blackbaud users, and therefore no longer actively maintaining this package. If you would like to discuss this tool, or the approaches it took to accessing otherwise inaccessible data in Blackbaud, please reach out directly to [Seth Battis](mailto:seth@battis.net?subject=msar)
 
-# @msar/debug
+# @msar/puppeteer-session
 
-[`msar`](https://www.npmjs.com/package/msar) component: debugging output
+[`msar`](https://www.npmjs.com/package/msar) component: Puppeteer session management
 
-![NPM Version](https://img.shields.io/npm/v/@msar%2Fdebug)
+![NPM Version](https://img.shields.io/npm/v/@msar%2Fpuppeteer-session)

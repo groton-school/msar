@@ -1,4 +1,4 @@
-> We are no longer Blackbaud users. If you would like to discuss this tool, or the approaches it took to accessing otherwise inaccessible data in Blackbaud, please reach out directly to [Seth Battis](mailto:seth@battis.net?subject=msar)
+> This package was developed to work with data stored in Blackbaud SIS/LMS/SWS instances. We are no longer Blackbaud users, and therefore no longer actively maintaining this package. If you would like to discuss this tool, or the approaches it took to accessing otherwise inaccessible data in Blackbaud, please reach out directly to [Seth Battis](mailto:seth@battis.net?subject=msar)
 
 # @msar/pronunciation
 
@@ -21,8 +21,6 @@ It depends on [Node.js](https://nodejs.org/) which provides the `npm` package ma
 Usage:
 
 <pre lang="bash">msar pronunciation -h --o=&lt;outputPath&gt; --u=&lt;username&gt; --p=&lt;password&gt; --download --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=&lt;column&gt; --user=&lt;user&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>instanceURL</u> <u>[pathToSourceCsvFile]</u></pre>
-
-
 
 ### Positional arguments
 
