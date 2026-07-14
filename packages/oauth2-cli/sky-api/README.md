@@ -1,3 +1,5 @@
+> We are no longer Blackbaud users. If you would like to discuss this tool, or the approaches it took to accessing otherwise inaccessible data in Blackbaud, please reach out directly to [Seth Battis](mailto:seth@battis.net?subject=msar)
+
 # @oauth2-cli/sky-api
 
 Acquire SKY API access tokens via OAuth 2.0 within CLI tools
