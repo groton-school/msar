@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.3](https://github.com/groton-school/msar/compare/types/snapshot/0.2.2...types/snapshot/0.2.3) (2026-07-14)
+
+
+### Bug Fixes
+
+* add description pre-deprecation ([c8f32e0](https://github.com/groton-school/msar/commit/c8f32e0409a26bc0732f8c2498194c9546759fa7))
+
 ## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/types/snapshot/0.2.1...types/snapshot/0.2.2) (2026-04-28)
 
 

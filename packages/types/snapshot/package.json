@@ -1,6 +1,6 @@
 {
   "name": "@msar/types.snapshot",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "[`msar`](https://www.npmjs.com/package/msar) TypeScript component: types describing the output of [`msar snapshot`](https://www.npmjs.com/package/@msar/snapshot)",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/types/snapshot#readme",
   "repository": {
