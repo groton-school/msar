@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.2](https://github.com/groton-school/msar/compare/workflow/snapshot/0.5.1...workflow/snapshot/0.5.2) (2026-07-14)
+
+
+### Bug Fixes
+
+* prepare for deprecation ([753f02e](https://github.com/groton-school/msar/commit/753f02ea038e2f4d38f005efdd123579ebb8b2d2))
+
 ## [0.5.1](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/snapshot/0.5.0...workflow/snapshot/0.5.1) (2026-04-28)
 
 
