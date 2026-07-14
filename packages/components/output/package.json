@@ -1,6 +1,6 @@
 {
   "name": "@msar/output",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "[`msar`](https://www.npmjs.com/package/msar) component: file output",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/output#readme",
   "repository": {

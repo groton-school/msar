@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.10](https://github.com/groton-school/msar/compare/component/output/0.1.9...component/output/0.1.10) (2026-07-14)
+
+
+### Bug Fixes
+
+* add description pre-deprecation ([c8f32e0](https://github.com/groton-school/msar/commit/c8f32e0409a26bc0732f8c2498194c9546759fa7))
+
 ## [0.1.9](https://github.com/groton-school/myschoolapp-reporting/compare/component/output/0.1.8...component/output/0.1.9) (2026-04-28)
 
 
