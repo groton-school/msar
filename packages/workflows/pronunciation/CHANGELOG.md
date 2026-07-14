@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.9](https://github.com/groton-school/msar/compare/workflow/pronunciation/0.0.8...workflow/pronunciation/0.0.9) (2026-07-14)
+
+
+### Bug Fixes
+
+* prepare for deprecation ([753f02e](https://github.com/groton-school/msar/commit/753f02ea038e2f4d38f005efdd123579ebb8b2d2))
+
 ## [0.0.8](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/pronunciation/0.0.7...workflow/pronunciation/0.0.8) (2026-06-24)
 
 
