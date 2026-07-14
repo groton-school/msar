@@ -1,6 +1,6 @@
 {
   "name": "@msar/debug",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "[`msar`](https://www.npmjs.com/package/msar) component: debugging outp",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/debug#readme",
   "repository": {
