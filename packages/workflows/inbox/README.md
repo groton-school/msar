@@ -22,6 +22,8 @@ Usage:
 
 <pre lang="bash">msar inbox -h --v=&lt;val&gt; --o=&lt;outputPath&gt; --u=&lt;username&gt; --p=&lt;password&gt; --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --column=&lt;column&gt; --searchIn=&lt;searchIn&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>url</u> <u>csv</u></pre>
 
+
+
 ### Positional arguments
 
 #### <u>`url`</u>

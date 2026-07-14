@@ -20,6 +20,8 @@ Usage:
 
 <pre lang="bash">msar archive -h --u=&lt;username&gt; --p=&lt;password&gt; --o=&lt;outputPath&gt; --retry --headless --devtools --quit --pretty --commands --silent --logging --ignoreErrors --logRequests --include=&lt;`"^\\/\\.example\\.com"`&gt; --exclude=&lt;`"\\.example\\.com,foo\\..+\\.com"`&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>snapshotPath</u></pre>
 
+
+
 ### Positional arguments
 
 #### <u>`snapshotPath`</u>

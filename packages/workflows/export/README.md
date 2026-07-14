@@ -22,6 +22,8 @@ Usage:
 
 <pre lang="bash">msar export -h --o=&lt;outputPath&gt; --bulletinBoard --topics --assignments --pretty --commands --silent --logging --ignoreErrors --logRequests --groupId=&lt;groupId&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; <u>pathToSnapshot</u></pre>
 
+
+
 ### Positional arguments
 
 #### <u>`pathToSnapshot`</u>

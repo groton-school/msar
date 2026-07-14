@@ -22,6 +22,8 @@ Usage:
 
 <pre lang="bash">msar snapshot -hbtagA --o=&lt;outputPath&gt; --u=&lt;username&gt; --p=&lt;password&gt; --active --future --expired --studentData --metadata --pretty --headless --devtools --quit --commands --silent --logging --ignoreErrors --logRequests --fromDate=&lt;fromDate&gt; --toDate=&lt;toDate&gt; --association=&lt;`"Activities"`, `"Advisories"`, `"Classes"`, `"Community Groups"`, `"Dorms"`, and `"Teams"`&gt; --termsOffered=&lt;termsOffered&gt; --groupsPath=&lt;groupsPath&gt; --year=&lt;year&gt; --csv=&lt;csv&gt; --resume=&lt;resume&gt; --sso=&lt;sso&gt; --mfa=&lt;mfa&gt; --viewportWidth=&lt;viewportWidth&gt; --viewportHeight=&lt;viewportHeight&gt; --opAccount=&lt;example.1password.com&gt; --opItem=&lt;1Password unique identifier&gt; --opToken=&lt;token value&gt; --logFilePath=&lt;logFilePath&gt; --stdoutLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --fileLevel=&lt;all|trace|debug|info|warning|error|fatal|off&gt; --concurrency=&lt;concurrency&gt; --rate=&lt;rate&gt; <u>url</u></pre>
 
+
+
 ### Positional arguments
 
 #### <u>`url`</u>
@@ -72,7 +74,7 @@ Include student data in the course snapshot (Default: `true`, use `--no-studentD
 
 #### `--metadata`
 
-Include additional `:Snapshot`.metadata.json`recording the parameters of the snapshot command. (Default:`true`, use `--no-metadata` to disable)
+Include additional ``:Snapshot``.metadata.json` recording the parameters of the snapshot command. (Default: `true`, use `--no-metadata` to disable)
 
 #### `-A --all`
 
@@ -128,7 +130,7 @@ The OAuth 2.0 **refresh_token** is read from the `SKY_REFRESH_TOKEN` environment
 
 #### `-o<outputPath> --outputPath=<outputPath>`
 
-Path to output directory or file to save command output (default: `/Users/sbattis/Documents/GitHub/msar/`:Snapshot``.json`, where `:Snapshot` is either the name of the course in `"`:Year`` - `:Teacher` - `:CourseTitle` - `:SectionId`"` format for a single section or group or "snapshot"` if the `--all` flag is set. `:Snapshot`.metadata.json`is also output, recording the parameters of the snapshot command. Will use the value in environment variable`OUTPUT_PATH` if present)
+Path to output directory or file to save command output (default: `/Users/sbattis/Documents/GitHub/msar/`:Snapshot``.json`, where `:Snapshot` is either the name of the course in `"`:Year`` - `:Teacher` - `:CourseTitle` - `:SectionId`"` format for a single section or group or "snapshot"` if the `--all` flag is set. ``:Snapshot``.metadata.json` is also output, recording the parameters of the snapshot command. Will use the value in environment variable `OUTPUT_PATH` if present)
 
 #### `--pretty`
 
