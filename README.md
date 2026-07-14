@@ -10,6 +10,6 @@ A CLI Tool for collecting reporting data from the Blackbaud LMS
 
 Types for working with the Blackbaud LMS's front-end APIs
 
-## [datadirect-puppeteer](./packages/datadirect-puppeteer) ![NPM Version](https://img.shields.io/npm/v/datadirect-puppeteer)
+## [datadirect-puppeteer](./packages/datadirect-puppeteer) ![NPM Version](https://img.shields.io/npm/v/@msar%2Fdatadirect-puppeteer)
 
 A library for calling the Blackbaud LMS's front-end APIs using Puppeteer
