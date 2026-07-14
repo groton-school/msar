@@ -1,6 +1,7 @@
 {
   "name": "@msar/types.archive",
   "version": "0.2.1",
+  "description": "[`msar`](https://www.npmjs.com/package/msar) TypeScript component: types describing the output of [`msar archive`](https://www.npmjs.com/package/@msar/archive)",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/types/archive#readme",
   "repository": {
     "type": "git",

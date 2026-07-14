@@ -1,6 +1,7 @@
 {
   "name": "@msar/puppeteer-session",
   "version": "0.2.1",
+  "description": "[`msar`](https://www.npmjs.com/package/msar) component: Puppeteer session management",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/puppeteer-session#readme",
   "repository": {
     "type": "git",

@@ -1,6 +1,7 @@
 {
   "name": "@msar/workflow",
   "version": "0.3.0",
+  "description": "[`msar`](https://www.npmjs.com/package/msar) component: shared workflow configuration options",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/workflow#readme",
   "repository": {
     "type": "git",

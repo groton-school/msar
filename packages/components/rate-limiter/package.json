@@ -1,6 +1,7 @@
 {
   "name": "@msar/rate-limiter",
   "version": "0.2.0",
+  "description": "[`msar`](https://www.npmjs.com/package/msar) component: rate-limit API requests",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/components/rate-limiter#readme",
   "repository": {
     "type": "git",
