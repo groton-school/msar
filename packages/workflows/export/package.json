@@ -1,6 +1,6 @@
 {
   "name": "@msar/export",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Export a human-readable version of an archived snapshot of a course",
   "homepage": "https://github.com/groton-school/msar/tree/main/packages/workflows/export#readme",
   "repository": {
