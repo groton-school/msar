@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.3](https://github.com/groton-school/msar/compare/workflow/school-website/0.2.2...workflow/school-website/0.2.3) (2026-07-14)
+
+
+### Bug Fixes
+
+* prepare for deprecation ([753f02e](https://github.com/groton-school/msar/commit/753f02ea038e2f4d38f005efdd123579ebb8b2d2))
+
 ## [0.2.2](https://github.com/groton-school/myschoolapp-reporting/compare/workflow/school-website/0.2.1...workflow/school-website/0.2.2) (2026-06-01)
 
 
